@@ -1,0 +1,2 @@
+rpm-unity-sdk-core-main\rpm-unity-sdk-core-main\Editor\Core\Scripts\UI\CustomEditors\AvatarConfigEditor.cs(242,13): warning CS0618: 'BaseVerticalCollectionView.onItemsChosen' is obsolete: 'onItemsChosen is deprecated, use itemsChosen instead'
+rpm-unity-sdk-core-main\rpm-unity-sdk-core-main\Editor\Core\Scripts\UI\CustomEditors\AvatarConfigEditor.cs(243,13): warning CS0618: 'BaseVerticalCollectionView.onSelectionChange' is obsolete: 'onSelectionChange is deprecated, use selectionChanged instead'
