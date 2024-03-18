@@ -32,9 +32,6 @@ public class CameraMovement : MonoBehaviour
         float mouseX = Input.GetAxis(MOUSE_AXIS_X);
         float mouseY = Input.GetAxis(MOUSE_AXIS_Y);
 
-        Debug.Log("Mouse X: " + mouseX);
-        Debug.Log("Mouse Y: " + mouseY);
-
         yaw += mouseX * sensitivity;
         pitch -= mouseY * sensitivity;
         pitch = Mathf.Clamp(pitch, pitchMinMax.x, pitchMinMax.y);

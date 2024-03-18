@@ -13,47 +13,34 @@ public class PlayerMovement : MonoBehaviour
     private static readonly int IsGroundedHash = Animator.StringToHash("IsGrounded");
 
     
-    private CharacterController CaractherController;
-
-    private Vector3 moveDirection;
+    private CharacterController characterController;
     
     private Transform playerCamera;
-
-    public float speed = 3f;
-
-    private float gravity = 20f;
-
-    public float jumpForce = 5f;
-
-    private float verticalVelocity = 0;
-
-    private bool jumpTrigger = false;
     
     private GameObject avatar;
     
-    private float walkSpeed = 3f;
-    
-    private float runSpeed = 8f;
-    
-    private float turnSmoothVelocity;
-    
-    private const float TURN_SMOOTH_TIME = 0.05f;
-    
-    private bool isRunning;
-    
     private Animator animator;
+    
+    private Vector3 moveDirection;
+    
+
+    public float speed = 3f;
+    private float gravity = 20f;
+    public float jumpForce = 5f;
+    private float verticalVelocity = 0;
+    private bool jumpTrigger = false;
+    private float turnSmoothVelocity;
+    private const float TURN_SMOOTH_TIME = 0.05f;
+    private float currentSpeed = 0f;
 
     private void Awake()
     {
         avatar = transform.GetChild(0).gameObject;
-        CaractherController = GetComponent<CharacterController>();
+        characterController = GetComponent<CharacterController>();
         animator = avatar.GetComponent<Animator>();
         animator.applyRootMotion = false;
-        animator.SetBool(IsGroundedHash, this.CaractherController.isGrounded);
-        if (playerCamera == null)
-        {
-            playerCamera = transform.GetChild(1);
-        }
+        animator.SetBool(IsGroundedHash, this.characterController.isGrounded);
+        playerCamera = transform.GetChild(1);
     }
 
     // Update is called once per frame
@@ -86,20 +73,33 @@ public class PlayerMovement : MonoBehaviour
             moveDirection.Normalize();
         }
         
-        float currentSpeed = moveDirection.magnitude ;
+        
+        
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = 5;
+            currentSpeed =  moveDirection.magnitude * 2;
+            animator.SetFloat(MoveSpeedHash, currentSpeed,0.05f,Time.deltaTime);
+        }
+        else
+        {
+            speed = 3;
+            currentSpeed = moveDirection.magnitude ;
+            animator.SetFloat(MoveSpeedHash, currentSpeed,0.05f,Time.deltaTime);
+        }
+        
+        
         moveDirection = transform.TransformDirection(moveDirection);
+        
         moveDirection *= speed * Time.deltaTime;
         ApplyGravity();
-        CaractherController.Move(moveDirection);
-        animator.SetFloat(MoveSpeedHash, currentSpeed);
+        characterController.Move(moveDirection);
         if (currentSpeed > 0)
         {
             RotateAvatarTowardsMoveDirection(moveDirection);
         }
     }
     
-    
-
     
     void ApplyGravity()
     {
@@ -111,17 +111,17 @@ public class PlayerMovement : MonoBehaviour
     private void PlayerJumb()
     {
         
-        if (this.CaractherController.isGrounded && Input.GetKeyDown(KeyCode.Space))
+        if (this.characterController.isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
             verticalVelocity = jumpForce;
             jumpTrigger = true;
             animator.SetTrigger(JumpHash);
         }
 
-        if (jumpTrigger && this.CaractherController.isGrounded)
+        if (jumpTrigger && this.characterController.isGrounded)
         {
             jumpTrigger = false;
-            animator.SetBool(IsGroundedHash, this.CaractherController.isGrounded);
+            animator.SetBool(IsGroundedHash, this.characterController.isGrounded);
         }
     }
     
