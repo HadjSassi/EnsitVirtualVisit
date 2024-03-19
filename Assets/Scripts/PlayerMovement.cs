@@ -9,7 +9,6 @@ public class PlayerMovement : MonoBehaviour
     
     private static readonly int MoveSpeedHash = Animator.StringToHash("MoveSpeed");
     private static readonly int JumpHash = Animator.StringToHash("JumpTrigger");
-    private static readonly int FreeFallHash = Animator.StringToHash("FreeFall");
     private static readonly int IsGroundedHash = Animator.StringToHash("IsGrounded");
 
     
@@ -79,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
         {
             speed = 5;
             currentSpeed =  moveDirection.magnitude * 2;
-            animator.SetFloat(MoveSpeedHash, currentSpeed,0.05f,Time.deltaTime);
+            animator.SetFloat(MoveSpeedHash, currentSpeed,0.20f,Time.deltaTime);
         }
         else
         {

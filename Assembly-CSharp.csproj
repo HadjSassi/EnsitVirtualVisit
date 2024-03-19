@@ -49,6 +49,7 @@
     <Compile Include="Assets\Scripts\MouseCursorLock.cs" />
     <Compile Include="Assets\Scripts\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonLoader.cs" />
+    <Compile Include="Assets\Scripts\IdleDone.cs" />
     <Compile Include="Assets\Scripts\LoadingAnimation.cs" />
     <Compile Include="Assets\Scripts\LookAtCamera.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonController.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="Assets\Scripts\CameraOrbit.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\GroundCheck.cs" />
+    <Compile Include="Assets\Scripts\PlayerIdles.cs" />
     <Compile Include="Assets\Scripts\PersonalAvatarLoader.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <None Include="Assets\Ready Player Me\Avatars\63e9b2126f759e4d1dfabc6d\63e9b2126f759e4d1dfabc6d.json" />
