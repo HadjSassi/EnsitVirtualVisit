@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
         
         
         
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
         {
             speed = 5;
             currentSpeed =  moveDirection.magnitude * 2;
@@ -82,9 +82,19 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            speed = 3;
-            currentSpeed = moveDirection.magnitude ;
-            animator.SetFloat(MoveSpeedHash, currentSpeed,0.05f,Time.deltaTime);
+            if (speed == 5)
+            {
+                speed = 3;
+                currentSpeed = moveDirection.magnitude ;
+                animator.SetFloat(MoveSpeedHash, currentSpeed,0.20f,Time.deltaTime);
+            }
+            else
+            {
+                speed = 3;
+                currentSpeed = moveDirection.magnitude ;
+                animator.SetFloat(MoveSpeedHash, currentSpeed,0.10f,Time.deltaTime);
+            }
+            
         }
         
         

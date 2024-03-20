@@ -7,7 +7,7 @@ public class CameraMovement : MonoBehaviour
 
     [SerializeField] private float distance = 0f; // Distance from the player
     [SerializeField] private float sensitivity = 2f; // Mouse sensitivity
-    [SerializeField] private Vector2 pitchMinMax = new Vector2(-30f, 60f); // Minimum and maximum pitch angle
+    [SerializeField] private Vector2 pitchMinMax = new Vector2(-20f, 10); // Minimum and maximum pitch angle
 
     private Transform playerTransform;
     private float yaw; // Horizontal rotation
