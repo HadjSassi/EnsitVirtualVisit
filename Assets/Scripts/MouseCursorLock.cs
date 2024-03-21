@@ -1,29 +1,53 @@
 using UnityEngine;
 
-namespace ReadyPlayerMe.Samples.QuickStart
+
+public class MouseCursorLock : MonoBehaviour
 {
-    public class MouseCursorLock : MonoBehaviour
+    [SerializeField] [Tooltip("Defines the Cursor Lock Mode to apply")]
+    private CursorLockMode cursorLockMode;
+
+    [SerializeField] [Tooltip("If true will hide mouse cursor")]
+    private bool hideCursor = true;
+
+    [SerializeField] [Tooltip("If true it apply cursor settings on start")]
+    private bool applyOnStart = true;
+    
+    private static MouseCursorLock instance;
+
+    public static MouseCursorLock Instance
     {
-        [SerializeField] [Tooltip("Defines the Cursor Lock Mode to apply")]
-        private CursorLockMode cursorLockMode;
-        [SerializeField] [Tooltip("If true will hide mouse cursor")]
-        private bool hideCursor = true;
-        [SerializeField] [Tooltip("If true it apply cursor settings on start")]
-        private bool applyOnStart = true;
-
-        // Start is called before the first frame update
-        void Start()
+        get
         {
-            if (applyOnStart)
+            if (instance == null)
             {
-                Apply();
+                instance = FindObjectOfType<MouseCursorLock>();
+                if (instance == null)
+                {
+                    Debug.LogError("MouseCursorLock component not found in the scene.");
+                }
             }
+            return instance;
         }
-
-        public void Apply()
+    }
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+        if (applyOnStart)
         {
-            Cursor.visible = hideCursor;
-            Cursor.lockState = cursorLockMode;
+            Apply();
         }
+    }
+
+    public void Apply()
+    {
+        Cursor.visible = hideCursor;
+        Cursor.lockState = cursorLockMode;
+    }
+
+    public void SetCursorVisible(bool visible)
+    {
+        Cursor.visible = visible;
+        Cursor.lockState = visible ? CursorLockMode.None : cursorLockMode;
     }
 }

@@ -1,90 +1,59 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Object = UnityEngine.Object;
 
 public class PlayerInteractions : MonoBehaviour
 {
+    private static readonly string CanvasOfInteractable = "CanvaI";
+    private GameObject canvas;
+    private bool isInInformationCollider;
     
-    // private static readonly int ApplyInteraction = Animator.StringToHash("ApplyInteraction");
-    // private static readonly string CanvasOfInteractable = "CanvaI";
-    // private GameObject canvas;
-    
-    // Start is called before the first frame update
     void Start()
     {
-        // canvas = GameObject.FindWithTag(CanvasOfInteractable); // Find the canvas object
-        // print(canvas);
-        // if (canvas != null)
-        // {
-        //     canvas.SetActive(false); // Initially deactivate the canvas
-        // }
-    }
+        canvas = GameObject.FindWithTag(CanvasOfInteractable);
+        if (canvas != null)
+        {
+            canvas.SetActive(false);
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
+        isInInformationCollider = false;
         
     }
 
-    // private void OnTriggerEnter(Collider other)
-    // {
-    //    
-    //     if (other.tag == "Interaction")
-    //     {
-    //         Animator a = other.GetComponentInParent<Animator>();
-    //         a.SetBool(ApplyInteraction,true);
-    //         
-    //     }
-    //     
-    // }
-    //
-    
-    // private void OnTriggerStay(Collider other)
-    // {
-    //     if (other.CompareTag("Information"))
-    //     {
-    //         if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.I))
-    //         {
-    //             if (canvas != null)
-    //             {
-    //                 canvas.SetActive(!canvas.activeSelf); // Toggle the canvas
-    //             }
-    //         }
-    //     }
-    //
-    //     if (other.CompareTag("Interaction"))
-    //     {
-    //         Animator animator = other.GetComponentInParent<Animator>();
-    //         if (animator != null)
-    //         {
-    //             animator.SetBool(ApplyInteraction, true);
-    //         }
-    //     }
-    // }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.I))
+        {
+            if (isInInformationCollider && canvas != null)
+            {
+                canvas.SetActive(!canvas.activeSelf);
 
+                // Update cursor settings based on canvas activity
+                if (canvas.activeSelf)
+                {
+                    MouseCursorLock.Instance.SetCursorVisible(true);
+                }
+                else
+                {
+                    MouseCursorLock.Instance.Apply();
+                }
+            }
+        }
+    }
 
-    // private void OnTriggerExit(Collider other)
-    // {
-    //     if (other.CompareTag("Interaction"))
-    //     {
-    //         Animator animator = other.GetComponentInParent<Animator>();
-    //         if (animator != null)
-    //         {
-    //             animator.SetBool(ApplyInteraction, false);
-    //         }
-    //     }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Information"))
+        {
+            isInInformationCollider = true;
+        }
+    }
 
-        // if (other.CompareTag("Information"))
-        // {
-        //     if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.I))
-        //     {
-        //         if (canvas != null)
-        //         {
-        //             canvas.SetActive(false); // Deactivate the canvas
-        //         }
-        //     }
-        // }
-    // }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Information"))
+        {
+            isInInformationCollider = false;
+            canvas.SetActive(false);
+            MouseCursorLock.Instance.Apply();
+        }
+    }
 }
