@@ -51,11 +51,16 @@ public class PlayerInteractions : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Information") && isInInformationCollider)
+        if (other.CompareTag("Information"))
         {
+            if (canvas.activeSelf)
+            {
+                MouseCursorLock.Instance.Apply();
+                canvas.SetActive(false);
+            }
             isInInformationCollider = false;
-            canvas.SetActive(false);
-            MouseCursorLock.Instance.Apply();
+            
+            
         }
     }
 }

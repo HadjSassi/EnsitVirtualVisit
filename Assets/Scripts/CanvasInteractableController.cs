@@ -9,7 +9,6 @@ public class CanvasInteractableController : MonoBehaviour
         GameObject canvas = GameObject.FindWithTag(PlayerInteractions.CanvasOfInteractable);
         canvas.SetActive(false);
         MouseCursorLock.Instance.Apply();
-        PlayerInteractions.isInInformationCollider = false;
     }
 
     public void LinkClick()
