@@ -30,8 +30,10 @@ public class PlayerIdles : MonoBehaviour
     {
         // Check if any movement keys are pressed
         // todo for checking what needs to be pressed
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.RightArrow) ||
-            Input.GetKey(KeyCode.LeftArrow))
+        if (
+            Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.RightArrow) ||
+            Input.GetKey(KeyCode.LeftArrow)||Input.GetKey(KeyCode.A) ||Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.Q) ||
+            Input.GetKey(KeyCode.D))
         {
             animator.SetTrigger(exitTime);
             // If any movement key is pressed, immediately return to the first state

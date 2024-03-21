@@ -7,7 +7,7 @@ using UnityEngine;
 public class DoorInteraction : MonoBehaviour
 {
     private static readonly int ApplyInteraction = Animator.StringToHash("ApplyInteraction");
-    private static readonly string PlayerTag = "Interaction";
+    private static readonly string PlayerTag = "PlayerHolder";
     private Animator animator;
     
     // Start is called before the first frame update

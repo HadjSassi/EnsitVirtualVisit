@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\GroundCheck.cs" />
     <Compile Include="Assets\Scripts\PlayerIdles.cs" />
     <Compile Include="Assets\Scripts\Icon.cs" />
+    <Compile Include="Assets\Scripts\CanvasInteractableController.cs" />
     <Compile Include="Assets\Scripts\DoorInteraction.cs" />
     <Compile Include="Assets\Scripts\PersonalAvatarLoader.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />

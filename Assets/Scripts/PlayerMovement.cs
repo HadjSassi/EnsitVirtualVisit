@@ -71,13 +71,14 @@ public class PlayerMovement : MonoBehaviour
         {
             moveDirection.Normalize();
         }
-        
-        
+
+        var velocity = characterController.velocity;
+        float velocityFacing = (velocity.magnitude) >1 ? 1 : 0;
         
         if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
         {
             speed = 5;
-            currentSpeed =  moveDirection.magnitude * 2;
+            currentSpeed =  moveDirection.magnitude * 2*velocityFacing;
             animator.SetFloat(MoveSpeedHash, currentSpeed,0.20f,Time.deltaTime);
         }
         else
@@ -85,13 +86,13 @@ public class PlayerMovement : MonoBehaviour
             if (speed == 5)
             {
                 speed = 3;
-                currentSpeed = moveDirection.magnitude ;
+                currentSpeed = moveDirection.magnitude*velocityFacing ;
                 animator.SetFloat(MoveSpeedHash, currentSpeed,0.20f,Time.deltaTime);
             }
             else
             {
                 speed = 3;
-                currentSpeed = moveDirection.magnitude ;
+                currentSpeed = moveDirection.magnitude*velocityFacing ;
                 animator.SetFloat(MoveSpeedHash, currentSpeed,0.10f,Time.deltaTime);
             }
             

@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class PlayerInteractions : MonoBehaviour
 {
-    private static readonly string CanvasOfInteractable = "CanvaI";
+    public static readonly string CanvasOfInteractable = "CanvaI";
     private GameObject canvas;
-    private bool isInInformationCollider;
+    public static bool isInInformationCollider;
     
     void Start()
     {
@@ -39,17 +39,19 @@ public class PlayerInteractions : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Information"))
+        if (other.CompareTag("Information") )
         {
             isInInformationCollider = true;
         }
-    }
+    } 
+    
+   
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Information"))
+        if (other.CompareTag("Information") && isInInformationCollider)
         {
             isInInformationCollider = false;
             canvas.SetActive(false);
