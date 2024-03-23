@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         var velocity = characterController.velocity;
-        float velocityFacing = (velocity.magnitude) >1 ? 1 : 0;
+        float velocityFacing = Mathf.Abs(velocity.magnitude) >1 ? 1 : 0;
         
         if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
         {

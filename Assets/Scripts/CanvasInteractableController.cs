@@ -15,5 +15,13 @@ public class CanvasInteractableController : MonoBehaviour
     {
         Application.OpenURL("https://www.google.com");
     }
+
+    public void Resume()
+    {
+        print("Resume");
+        GameObject canvas = GameObject.FindWithTag(PlayerInteractions.CanvasOfEchap);
+        canvas.SetActive(false);
+        MouseCursorLock.Instance.Apply();
+    }
     
 }

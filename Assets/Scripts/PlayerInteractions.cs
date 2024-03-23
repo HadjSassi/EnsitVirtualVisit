@@ -3,31 +3,33 @@ using UnityEngine;
 public class PlayerInteractions : MonoBehaviour
 {
     public static readonly string CanvasOfInteractable = "CanvaI";
-    private GameObject canvas;
+    public static readonly string CanvasOfEchap = "CanvaEchap";
+    private GameObject canvaInteractable, canvaEchap;
     public static bool isInInformationCollider;
-    
+
     void Start()
     {
-        canvas = GameObject.FindWithTag(CanvasOfInteractable);
-        if (canvas != null)
+        canvaInteractable = GameObject.FindWithTag(CanvasOfInteractable);
+        canvaEchap = GameObject.FindWithTag(CanvasOfEchap);
+        if (canvaInteractable != null && canvaEchap != null)
         {
-            canvas.SetActive(false);
+            canvaInteractable.SetActive(false);
+            canvaEchap.SetActive(false);
         }
 
         isInInformationCollider = false;
-        
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.I))
         {
-            if (isInInformationCollider && canvas != null)
+            if (isInInformationCollider && canvaInteractable != null)
             {
-                canvas.SetActive(!canvas.activeSelf);
+                canvaInteractable.SetActive(!canvaInteractable.activeSelf);
 
                 // Update cursor settings based on canvas activity
-                if (canvas.activeSelf)
+                if (canvaInteractable.activeSelf)
                 {
                     MouseCursorLock.Instance.SetCursorVisible(true);
                 }
@@ -37,30 +39,42 @@ public class PlayerInteractions : MonoBehaviour
                 }
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            canvaEchap.SetActive(!canvaEchap.activeSelf);
+            // Update cursor settings based on canvas activity
+            if (canvaInteractable.activeSelf)
+            {
+                MouseCursorLock.Instance.SetCursorVisible(true);
+            }
+            else
+            {
+                MouseCursorLock.Instance.Apply();
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Information") )
+        if (other.CompareTag("Information"))
         {
             isInInformationCollider = true;
         }
-    } 
-    
-   
+    }
+
 
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Information"))
         {
-            if (canvas.activeSelf)
+            if (canvaInteractable.activeSelf)
             {
                 MouseCursorLock.Instance.Apply();
-                canvas.SetActive(false);
+                canvaInteractable.SetActive(false);
             }
+
             isInInformationCollider = false;
-            
-            
         }
     }
 }
