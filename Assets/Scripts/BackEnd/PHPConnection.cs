@@ -3,12 +3,12 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class PHPConnection : MonoBehaviour
+public class Web : MonoBehaviour
 {
     private void Start()
     {
         // StartCoroutine(GetDate());
-        StartCoroutine(Login("testuser","123456"));
+        // StartCoroutine(Login("testuser","123456"));
     }
 
     IEnumerator GetDate()
@@ -52,7 +52,7 @@ public class PHPConnection : MonoBehaviour
 
 
     
-    IEnumerator Login(string username, string pass)
+    public IEnumerator Login(string username, string pass)
     {
 
         WWWForm form = new WWWForm();
