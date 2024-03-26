@@ -25,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7825374989609610537}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.3032948, y: -0, z: -0, w: 0.9528968}
   m_LocalPosition: {x: 0, y: 2.493, z: -2.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7825374990175108135}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &7825374989609610539
 Camera:
@@ -47,9 +47,17 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -93,9 +101,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7825374990175108135}
-  - component: {fileID: 7825374990175108129}
-  - component: {fileID: 7825374990175108134}
-  - component: {fileID: 545647997}
+  - component: {fileID: 1121097230156781757}
+  - component: {fileID: 1894673665990147378}
   m_Layer: 0
   m_Name: RPM Camera Rig
   m_TagString: Untagged
@@ -110,6 +117,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7825374990175108132}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -117,9 +125,8 @@ Transform:
   m_Children:
   - {fileID: 7825374989609610538}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7825374990175108129
+--- !u!114 &1121097230156781757
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,14 +135,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7825374990175108132}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe759d8a0e88b174a8b7cd5f3d0da425, type: 3}
+  m_Script: {fileID: 11500000, guid: 14beee1abdb2df8498a8a535d19726c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 7825374989609610539}
-  target: {fileID: 0}
-  cameraDistance: -3
-  followOnStart: 1
---- !u!114 &7825374990175108134
+  distance: 0
+  sensitivity: 2
+  pitchMinMax: {x: -20, y: 10}
+--- !u!114 &1894673665990147378
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,23 +150,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7825374990175108132}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 731873f07a43384478f87bb5e9cf0f32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInput: {fileID: 0}
-  minRotationX: -50
-  maxRotationX: 50
-  smoothDamp: 0
---- !u!114 &545647997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7825374990175108132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee7a0f2cabd18c64dbdec82b601c0b57, type: 3}
+  m_Script: {fileID: 11500000, guid: 66561d97ed0ce884da8ff0081b254b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cursorLockMode: 1

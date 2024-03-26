@@ -15,32 +15,42 @@ public class CameraMovement : MonoBehaviour
 
     private void Start()
     {
-        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-        if (playerTransform == null)
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerObject != null)
+        {
+            playerTransform = playerObject.transform;
+            // Initialize camera rotation to match player's rotation
+            yaw = playerTransform.eulerAngles.y;
+            pitch = playerTransform.eulerAngles.x;
+        }
+        else
         {
             Debug.LogError("Player not found! Make sure the player has the 'Player' tag assigned.");
         }
-
-        // Initialize camera rotation to match player's rotation
-        yaw = playerTransform.eulerAngles.y;
-        pitch = playerTransform.eulerAngles.x;
     }
 
     private void LateUpdate()
     {
-        // Get mouse input
-        float mouseX = Input.GetAxis(MOUSE_AXIS_X);
-        float mouseY = Input.GetAxis(MOUSE_AXIS_Y);
+        if (playerTransform != null)
+        {
+            // Get mouse input
+            float mouseX = Input.GetAxis(MOUSE_AXIS_X);
+            float mouseY = Input.GetAxis(MOUSE_AXIS_Y);
 
-        yaw += mouseX * sensitivity;
-        pitch -= mouseY * sensitivity;
-        pitch = Mathf.Clamp(pitch, pitchMinMax.x, pitchMinMax.y);
+            yaw += mouseX * sensitivity;
+            pitch -= mouseY * sensitivity;
+            pitch = Mathf.Clamp(pitch, pitchMinMax.x, pitchMinMax.y);
 
-        // Calculate camera position based on rotation
-        Vector3 targetPosition = playerTransform.position - transform.forward * distance;
-        transform.position = targetPosition;
+            // Calculate camera position based on rotation
+            Vector3 targetPosition = playerTransform.position - transform.forward * distance;
+            transform.position = targetPosition;
 
-        // Rotate camera around player
-        transform.rotation = Quaternion.Euler(pitch, yaw, 0f);
+            // Rotate camera around player
+            transform.rotation = Quaternion.Euler(pitch, yaw, 0f);
+        }else
+        {
+            GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+            playerTransform = playerObject.transform;
+        }
     }
 }

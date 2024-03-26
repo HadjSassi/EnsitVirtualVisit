@@ -416,6 +416,58 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3957646562440413639, guid: 6a6ef2c821ba7e240bd250d8838667a2, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.3056603
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957646562440413639, guid: 6a6ef2c821ba7e240bd250d8838667a2, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.3056603
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957646562440413639, guid: 6a6ef2c821ba7e240bd250d8838667a2, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.3056603
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957646562440413639, guid: 6a6ef2c821ba7e240bd250d8838667a2, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.6226415
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957646562440413639, guid: 6a6ef2c821ba7e240bd250d8838667a2, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.6226415
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957646562440413639, guid: 6a6ef2c821ba7e240bd250d8838667a2, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.6226415
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957646562440413639, guid: 6a6ef2c821ba7e240bd250d8838667a2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957646562440413639, guid: 6a6ef2c821ba7e240bd250d8838667a2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957646562440413639, guid: 6a6ef2c821ba7e240bd250d8838667a2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8791872662917557034}
+    - target: {fileID: 3957646562440413639, guid: 6a6ef2c821ba7e240bd250d8838667a2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957646562440413639, guid: 6a6ef2c821ba7e240bd250d8838667a2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957646562440413639, guid: 6a6ef2c821ba7e240bd250d8838667a2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CanvasInteractableController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957646562440413639, guid: 6a6ef2c821ba7e240bd250d8838667a2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8283258531162520741, guid: 6a6ef2c821ba7e240bd250d8838667a2, type: 3}
       propertyPath: m_Name
       value: Echap
@@ -591,8 +643,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.3056603, g: 0.3056603, b: 0.3056603, a: 1}
+    m_HighlightedColor: {r: 0.4867924, g: 0.4867924, b: 0.4867924, a: 1}
+    m_PressedColor: {r: 0.18490559, g: 0.18490559, b: 0.18490559, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -691,8 +743,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.4867924, g: 0.4867924, b: 0.4867924, a: 1}
+    m_HighlightedColor: {r: 0.4792453, g: 0.4792453, b: 0.4792453, a: 1}
+    m_PressedColor: {r: 0.14716971, g: 0.14716971, b: 0.14716971, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1

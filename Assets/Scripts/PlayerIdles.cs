@@ -12,7 +12,7 @@ public class PlayerIdles : MonoBehaviour
     private GameObject avatar;
 
     private Animator animator;
-    
+
     [SerializeField] private int idleNumber = 0;
 
     [SerializeField] private float waitingTime = 60f; //1 minute
@@ -28,40 +28,49 @@ public class PlayerIdles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Check if any movement keys are pressed
-        // todo for checking what needs to be pressed
-        if (
-            Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.RightArrow) ||
-            Input.GetKey(KeyCode.LeftArrow)||Input.GetKey(KeyCode.W) ||Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.Q) ||
-            Input.GetKey(KeyCode.D))
+        if (avatar != null && animator != null)
         {
-            animator.SetTrigger(exitTime);
-            // If any movement key is pressed, immediately return to the first state
-            animator.SetInteger(IdleNumber, 0);
-            waitingTime = 60f; // Reset waiting time to 1 minute (60 seconds)
-        }
-        else
-        {
-            // If no movement keys are pressed, wait for the specified time and then set a new random idle animation
-            waitingTime -= Time.deltaTime;
-            animator.SetFloat(WaitingTime, waitingTime);
-
-            if (animator.GetBool(IdleDone))
+            // Check if any movement keys are pressed
+            // todo for checking what needs to be pressed
+            if (
+                Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.RightArrow) ||
+                Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Q) ||
+                Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.Q) ||
+                Input.GetKey(KeyCode.D))
             {
-                animator.SetBool(IdleDone, false);
-                // Reset waiting time
+                animator.SetTrigger(exitTime);
+                // If any movement key is pressed, immediately return to the first state
+                animator.SetInteger(IdleNumber, 0);
                 waitingTime = 60f; // Reset waiting time to 1 minute (60 seconds)
             }
             else
             {
-                if (waitingTime <= 0)
+                // If no movement keys are pressed, wait for the specified time and then set a new random idle animation
+                waitingTime -= Time.deltaTime;
+                animator.SetFloat(WaitingTime, waitingTime);
+
+                if (animator.GetBool(IdleDone))
                 {
-                    // Generate a random number between 1 and 6 for the idle animation
-                    idleNumber = Random.Range(1, 7);
-                    // Set the idle animation
-                    animator.SetInteger(IdleNumber, idleNumber);
+                    animator.SetBool(IdleDone, false);
+                    // Reset waiting time
+                    waitingTime = 60f; // Reset waiting time to 1 minute (60 seconds)
+                }
+                else
+                {
+                    if (waitingTime <= 0)
+                    {
+                        // Generate a random number between 1 and 6 for the idle animation
+                        idleNumber = Random.Range(1, 7);
+                        // Set the idle animation
+                        animator.SetInteger(IdleNumber, idleNumber);
+                    }
                 }
             }
+        }
+        else
+        {
+            avatar = transform.GetChild(0).gameObject;
+            animator = avatar.GetComponent<Animator>();
         }
     }
 }
