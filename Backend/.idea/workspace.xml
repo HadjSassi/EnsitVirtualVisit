@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c96f53b2-e765-4019-9f17-217dff486aaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/Login.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/Login.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/Main.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/Main.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Assembly-CSharp.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Assets/Scenes/modernScene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scenes/modernScene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Scripts/PHPConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/PHPConnection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Library/Bee/1900b0aE.dag.payloads" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/Bee/1900b0aE.dag.payloads" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Library/Bee/1900b0aE.dag_derived" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/Bee/1900b0aE.dag_derived" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.ref.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.ref.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Library/Bee/fullprofile.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/Bee/fullprofile.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Library/Search/transactions.db" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/Search/transactions.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Library/com.unity.ide.rider/PersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/com.unity.ide.rider/PersistedState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/../UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +28,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../IONIC" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -61,6 +47,7 @@
       <updated>1711217745720</updated>
       <workItem from="1711217747316" duration="4103000" />
       <workItem from="1711381016985" duration="615000" />
+      <workItem from="1711765297474" duration="80000" />
     </task>
     <servers />
   </component>
