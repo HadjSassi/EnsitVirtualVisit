@@ -2,35 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c96f53b2-e765-4019-9f17-217dff486aaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Assets/Prefabs/PlayGround2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Prefabs/PlayGround2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Prefabs/pop-up-banner-stand 1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Prefabs/pop-up-banner-stand 1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Prefabs/pop-up-banner-stand.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Prefabs/pop-up-banner-stand.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/AffichesScript.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/AffichesScript.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/BackEnd/Model.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/BackEnd/Model/Affiche.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/BackEnd/Model/Affiche.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/affiches.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Prefabs/PlayGround.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Prefabs/PlayGround.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Scenes/modernScene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scenes/modernScene1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Prefabs/pop-up-banner-stand 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Prefabs/pop-up-banner-stand 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Scripts/AffichesScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/AffichesScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Assets/Scripts/BackEnd/PHPConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/BackEnd/PHPConnection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Library/Bee/1900b0aE.dag.payloads" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/Bee/1900b0aE.dag.payloads" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Library/Bee/1900b0aE.dag_derived" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/Bee/1900b0aE.dag_derived" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.ref.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.ref.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Library/Bee/fullprofile.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/Bee/fullprofile.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Library/Search/transactions.db" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/Search/transactions.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Library/com.unity.ide.rider/PersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/com.unity.ide.rider/PersistedState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/../UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,6 +55,7 @@
       <workItem from="1711765297474" duration="80000" />
       <workItem from="1712329450956" duration="204000" />
       <workItem from="1712329790954" duration="4783000" />
+      <workItem from="1712405461984" duration="1386000" />
     </task>
     <servers />
   </component>

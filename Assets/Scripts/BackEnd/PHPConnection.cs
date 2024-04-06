@@ -8,7 +8,7 @@ using UnityEngine.Networking;
 public class Web : MonoBehaviour
 {
     
-    List<Affiche> affichesList = new List<Affiche>();
+    private List<Affiche> affichesList = new List<Affiche>();
     
     private void Start()
     {
@@ -83,7 +83,7 @@ public class Web : MonoBehaviour
     }
 
     [Obsolete("Obsolete")]
-    public IEnumerator GetAffiches()
+    public IEnumerator GetAffiches(Action<List<Affiche>> callback)
     {
         using (WWW www = new WWW("http://localhost:1234/affiches.php"))
         {
@@ -96,16 +96,7 @@ public class Web : MonoBehaviour
             else
             {
                 ParseJSONToAffiches(www.text);
-                
-                // Debug.Log("Number of affiches: " + affichesList.Count);
-                foreach (Affiche affiche in affichesList)
-                {
-                    Debug.Log("ID: " + affiche.idAffiche + ", Title: " + affiche.titre 
-                              + ", Subject: " + affiche.sujet + ", Description: " + affiche.description
-                              + ", Link: " + affiche.lien + ", Image: " + affiche.image
-                              + ", Localisation: " + affiche.localisationAffiche + ", Prix: " + affiche.prix
-                              );
-                }
+                callback?.Invoke(affichesList); 
             }
         }
     }

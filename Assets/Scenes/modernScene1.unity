@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pop-up-banner-stand1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3655228810240657019, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
+      propertyPath: m_TagString
+      value: Affiche
+      objectReference: {fileID: 0}
     - target: {fileID: 3968300887729802288, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.6390007
@@ -834,6 +838,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ad_banner
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c50cfaf14fc903c42984bf151e48b622, type: 3}
+      propertyPath: m_TagString
+      value: AdBanner
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -927,6 +935,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pop-up-banner-stand1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3655228810240657019, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
+      propertyPath: m_TagString
+      value: Affiche
+      objectReference: {fileID: 0}
     - target: {fileID: 3968300887729802288, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.6440005
@@ -988,6 +1000,10 @@ PrefabInstance:
     - target: {fileID: 3655228810240657019, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
       propertyPath: m_Name
       value: pop-up-banner-stand1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3655228810240657019, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
+      propertyPath: m_TagString
+      value: Affiche
       objectReference: {fileID: 0}
     - target: {fileID: 3968300887729802288, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
       propertyPath: m_LocalScale.x
@@ -1262,6 +1278,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 883017687832922788, guid: 1f151cae1fb2a2f4da1c88ebf2c83f33, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 883017687832922788, guid: 1f151cae1fb2a2f4da1c88ebf2c83f33, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 883017687832922788, guid: 1f151cae1fb2a2f4da1c88ebf2c83f33, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1658223908}
+    - target: {fileID: 883017687832922788, guid: 1f151cae1fb2a2f4da1c88ebf2c83f33, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LinkClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 883017687832922788, guid: 1f151cae1fb2a2f4da1c88ebf2c83f33, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971117840774174088, guid: 1f151cae1fb2a2f4da1c88ebf2c83f33, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4513531591044287065, guid: 1f151cae1fb2a2f4da1c88ebf2c83f33, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.1000054
@@ -1315,6 +1355,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f151cae1fb2a2f4da1c88ebf2c83f33, type: 3}
+--- !u!114 &1658223908 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8791872662917557034, guid: 1f151cae1fb2a2f4da1c88ebf2c83f33, type: 3}
+  m_PrefabInstance: {fileID: 1575457825}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1fdc1d7599ab74a8e6198e9c441f84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1664008762
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,21 +1453,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pop-up-banner-stand1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3655228810240657019, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
+      propertyPath: m_TagString
+      value: Affiche
+      objectReference: {fileID: 0}
     - target: {fileID: 3968300887729802288, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.015000004
+      value: 0.0150000015
       objectReference: {fileID: 0}
     - target: {fileID: 3968300887729802288, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.015000004
+      value: 0.015000002
       objectReference: {fileID: 0}
     - target: {fileID: 3968300887729802288, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.015000005
+      value: 0.0150000015
       objectReference: {fileID: 0}
     - target: {fileID: 3968300887729802288, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.6270006
+      value: -1.6270009
       objectReference: {fileID: 0}
     - target: {fileID: 3968300887729802288, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1424,15 +1479,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3968300887729802288, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.50899994
+      value: -0.50899976
       objectReference: {fileID: 0}
     - target: {fileID: 3968300887729802288, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.50486296
+      value: 0.504863
       objectReference: {fileID: 0}
     - target: {fileID: 3968300887729802288, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.50486296
+      value: -0.504863
       objectReference: {fileID: 0}
     - target: {fileID: 3968300887729802288, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
       propertyPath: m_LocalRotation.y
@@ -1440,7 +1495,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3968300887729802288, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.49508923
+      value: -0.4950893
       objectReference: {fileID: 0}
     - target: {fileID: 3968300887729802288, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2102,18 +2157,6 @@ PrefabInstance:
     - target: {fileID: 3655228810240657019, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
       propertyPath: m_Name
       value: pop-up-banner-stand1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3968300887729802288, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.015000004
-      objectReference: {fileID: 0}
-    - target: {fileID: 3968300887729802288, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.015000004
-      objectReference: {fileID: 0}
-    - target: {fileID: 3968300887729802288, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.015000005
       objectReference: {fileID: 0}
     - target: {fileID: 3968300887729802288, guid: 74d1f7b6cbda3ac4dab6e7a7da439303, type: 3}
       propertyPath: m_LocalPosition.x

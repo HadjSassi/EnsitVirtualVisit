@@ -11,10 +11,6 @@ public class CanvasInteractableController : MonoBehaviour
         MouseCursorLock.Instance.Apply();
     }
 
-    public void LinkClick()
-    {
-        Application.OpenURL("https://www.google.com");
-    }
 
     public void Resume()
     {
