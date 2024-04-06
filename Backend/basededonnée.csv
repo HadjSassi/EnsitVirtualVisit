@@ -1,0 +1,10 @@
+idAffiche,titre,sujet,description,localisationAffiche,image,prix,existant,lien
+1,"IndabaX 2023","IndabaX is an Artificial inteligence event","indabax 7aja wow",1,D:\affiches\a.jpg,20,0,www.google.com
+2,"Machine learning introduction","Mahdi Hadj sassi the instructor","indabax 7aja wow",1,D:\affiches\c.JPG,20,1,https://ensit.ieee.tn/
+3,"TSYP X","IndabaX is an Artificial inteligence event","indabax 7aja wow",2,D:\affiches\c.jpg,20,1,www.google.com
+4,"GO.D.S 2.0","IndabaX is an Artificial inteligence event","indabax 7aja wow",1,D:\affiches\d.jpg,20,1,www.google.com
+5,MLM,"IndabaX is an Artificial inteligence event","indabax 7aja wow",1,D:\affiches\e.jpg,20,1,www.google.com
+6,Streamlit,"IndabaX is an Artificial inteligence event","indabax 7aja wow",1,D:\affiches\f.jpg,20,1,www.google.com
+7,"IndabaX 2023 2","IndabaX is an Artificial inteligence event","IndabaX 7aja ta7ouna",1,D://affiches//g.jpg,20,1,www.facebook.com
+8,"Member Of the month",IEEE,IEEE,2,D:\affiches\h.jpg,20,1,www.google.com
+9,"IndabaX 3",IndabaX,Indabax,3,D:\affiches\i.JPG,20,0,www.google.com

@@ -116,8 +116,9 @@ public class Web : MonoBehaviour
                 affiche.description = data[3].Trim();
                 affiche.localisationAffiche = int.Parse(data[4].Trim());
                 affiche.image = data[5].Trim();
-                affiche.prix = int.Parse(data[6].Trim());
-                affiche.lien = data[7].Trim();
+                affiche.couverture = data[6].Trim();
+                affiche.prix = int.Parse(data[7].Trim());
+                affiche.lien = data[8].Trim();
                 affichesList.Add(affiche);
             }
         }

@@ -31,6 +31,7 @@ public class AffichesScript : MonoBehaviour
         this.affichesObjectsListLocalisation1 = GameObject.FindGameObjectsWithTag(afficheTag);
         this.adBannerObjectsListLocalisation2 = GameObject.FindGameObjectsWithTag(adBannerTag);
         int i = 0;
+        //todo if the number of the affiches is less than 6 you need to set one par default !
         foreach (GameObject afficheObject in affichesObjectsListLocalisation1)
         {
             Transform frontBanner = afficheObject.transform.Find("Root/Banner/Banner_0/frontBanner");
@@ -44,7 +45,7 @@ public class AffichesScript : MonoBehaviour
                     Material material = renderer.materials[0];
                     if (material != null)
                     {
-                        StartCoroutine(ChangeMaterialTexture(material, affichesLocalisation1[i].image));
+                        StartCoroutine(ChangeMaterialTexture(material, affichesLocalisation1[i].couverture));
                         currentAfficheScript.CurrentAffiche = affichesLocalisation1[i];
                         currentAfficheScript.idAffiche = affichesLocalisation1[i].idAffiche;
                         currentAfficheScript.typeAffiche = "Affiche";

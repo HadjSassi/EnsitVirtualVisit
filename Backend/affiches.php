@@ -26,6 +26,7 @@ if ($result->num_rows > 0){
             $row['description']." || ".
             $row['localisationAffiche']." || ".
             $row['image']." || ".
+            $row['couverture']." || ".
             $row['prix']." || ".
             $row['lien'].
             "<br>";
