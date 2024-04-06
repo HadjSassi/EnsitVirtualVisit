@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -12,6 +13,7 @@ public class Login : MonoBehaviour
     public Button LoginButton;
     
     // Start is called before the first frame update
+    [Obsolete("Obsolete")]
     void Start()
     {
         LoginButton.onClick.AddListener(() =>

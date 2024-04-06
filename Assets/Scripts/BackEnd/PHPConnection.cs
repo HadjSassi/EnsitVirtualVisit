@@ -1,21 +1,27 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
+using BackEnd.Model;
 using UnityEngine;
 using UnityEngine.Networking;
 
 public class Web : MonoBehaviour
 {
+    
+    List<Affiche> affichesList = new List<Affiche>();
+    
     private void Start()
     {
         // StartCoroutine(GetDate());
         // StartCoroutine(Login("testuser","123456"));
     }
 
+    [Obsolete("Obsolete")]
     IEnumerator GetDate()
     {
         using (UnityWebRequest www = UnityWebRequest.Get("http://localhost:1234/test.php"))
         {
-            yield return www.Send();
+            yield return www.SendWebRequest();
 
             if (www.isNetworkError || www.isHttpError)
             {
@@ -31,6 +37,7 @@ public class Web : MonoBehaviour
     }
     
     
+    [Obsolete("Obsolete")]
     IEnumerator GetUsers()
     {
         using (UnityWebRequest www = UnityWebRequest.Get("http://localhost:1234/test.php"))
@@ -52,6 +59,7 @@ public class Web : MonoBehaviour
 
 
     
+    [Obsolete("Obsolete")]
     public IEnumerator Login(string username, string pass)
     {
 
@@ -74,6 +82,55 @@ public class Web : MonoBehaviour
         }
     }
 
+    [Obsolete("Obsolete")]
+    public IEnumerator GetAffiches()
+    {
+        using (WWW www = new WWW("http://localhost:1234/affiches.php"))
+        {
+            yield return www;
+
+            if (!string.IsNullOrEmpty(www.error))
+            {
+                Debug.LogError("Error fetching affiches: " + www.error);
+            }
+            else
+            {
+                ParseJSONToAffiches(www.text);
+                
+                // Debug.Log("Number of affiches: " + affichesList.Count);
+                foreach (Affiche affiche in affichesList)
+                {
+                    Debug.Log("ID: " + affiche.idAffiche + ", Title: " + affiche.titre 
+                              + ", Subject: " + affiche.sujet + ", Description: " + affiche.description
+                              + ", Link: " + affiche.lien + ", Image: " + affiche.image
+                              + ", Localisation: " + affiche.localisationAffiche + ", Prix: " + affiche.prix
+                              );
+                }
+            }
+        }
+    }
+    
+    void ParseJSONToAffiches(string jsonData)
+    {
+        string[] lines = jsonData.Split("<br>");
+        foreach (string line in lines)
+        {
+            string[] data = line.Split(" || ");
+            if (data.Length >= 8)
+            {
+                Affiche affiche = new Affiche();
+                affiche.idAffiche = int.Parse(data[0].Trim());
+                affiche.titre = data[1].Trim();
+                affiche.sujet = data[2].Trim();
+                affiche.description = data[3].Trim();
+                affiche.localisationAffiche = int.Parse(data[4].Trim());
+                affiche.image = data[5].Trim();
+                affiche.prix = int.Parse(data[6].Trim());
+                affiche.lien = data[7].Trim();
+                affichesList.Add(affiche);
+            }
+        }
+    }
 
     
 }
