@@ -471,6 +471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idAffiche: 0
+  typeAffiche: 
 --- !u!4 &7629419691808534351 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2000980117070151526, guid: 429057fdfeacce04997a733efec6aefe, type: 3}

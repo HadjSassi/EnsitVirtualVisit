@@ -31,7 +31,8 @@ public class AffichesScript : MonoBehaviour
         this.affichesObjectsListLocalisation1 = GameObject.FindGameObjectsWithTag(afficheTag);
         this.adBannerObjectsListLocalisation2 = GameObject.FindGameObjectsWithTag(adBannerTag);
         int i = 0;
-        //todo if the number of the affiches is less than 6 you need to set one par default !
+        int nb = affichesObjectsListLocalisation1.Length;
+        //todo if the number of the affiches is less than nb you need to set one par default !
         foreach (GameObject afficheObject in affichesObjectsListLocalisation1)
         {
             Transform frontBanner = afficheObject.transform.Find("Root/Banner/Banner_0/frontBanner");
@@ -70,12 +71,18 @@ public class AffichesScript : MonoBehaviour
         foreach (GameObject adBannerObject in adBannerObjectsListLocalisation2)
         {
             MeshRenderer meshRenderer = adBannerObject.GetComponent<MeshRenderer>();
+            Transform interactable = adBannerObject.transform.Find("Position/Interaction");
+            CurrentAfficheScript currentAfficheScript = interactable.GetComponent<CurrentAfficheScript>();
+
             if (meshRenderer != null && meshRenderer.materials.Length >= 3)
             {
                 Material material = meshRenderer.materials[2];
                 if (material != null)
                 {
-                    StartCoroutine(ChangeMaterialTexture(material, affichesLocalisation2[i].image)); 
+                    StartCoroutine(ChangeMaterialTexture(material, affichesLocalisation2[i].couverture)); 
+                    currentAfficheScript.CurrentAffiche = affichesLocalisation2[i];
+                    currentAfficheScript.idAffiche = affichesLocalisation2[i].idAffiche;
+                    currentAfficheScript.typeAffiche = "Affiche";
                 }
                 else
                 {
