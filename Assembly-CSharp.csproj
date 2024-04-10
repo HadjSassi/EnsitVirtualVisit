@@ -124,6 +124,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne.json" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\ENSIT Bib\playGround\seperated\textures\doubleShaders.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
     <None Include="Assets\Ready Player Me\Avatars\64bfc617fffca9bd5d533218\64bfc617fffca9bd5d533218.json" />
     <Reference Include="UnityEngine">
