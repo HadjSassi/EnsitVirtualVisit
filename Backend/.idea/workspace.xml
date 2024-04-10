@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c96f53b2-e765-4019-9f17-217dff486aaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Assets/Prefabs/ENSIT.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Prefabs/ENSIT.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AvatarTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Scenes/modernScene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scenes/modernScene1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Library/Bee/TundraBuildState.state" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/Bee/TundraBuildState.state" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Library/Bee/fullprofile.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/Bee/fullprofile.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Library/Search/transactions.db" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/Search/transactions.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
@@ -15,6 +12,8 @@
       <change beforePath="$PROJECT_DIR$/../Library/com.unity.ide.rider/PersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/com.unity.ide.rider/PersistedState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Logs/AssetImportWorker0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Logs/AssetImportWorker1.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Logs/AssetImportWorker1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/../UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +63,8 @@
       <workItem from="1712573420877" duration="614000" />
       <workItem from="1712657169698" duration="671000" />
       <workItem from="1712712594830" duration="610000" />
+      <workItem from="1712752030447" duration="1823000" />
+      <workItem from="1712772664238" duration="5000" />
     </task>
     <servers />
   </component>
