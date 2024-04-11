@@ -9,7 +9,6 @@ namespace ReadyPlayerMe.Samples.QuickStart
 {
     public class ThirdPersonLoader : MonoBehaviour
     {
-        //todo mahdi you need to get the image from the player image and change it by the same avatarUrl but replace the .glb by .png
         //todo mahdi here you will search in the database the avatar name from the avatarUrl
 
         private string playerCanvaTag = "PlayerCanva";
@@ -34,6 +33,7 @@ namespace ReadyPlayerMe.Samples.QuickStart
 
         public event Action OnLoadComplete;
 
+        [Obsolete("Obsolete")]
         private void Start()
         {
             avatarObjectLoader = new AvatarObjectLoader();
@@ -50,12 +50,22 @@ namespace ReadyPlayerMe.Samples.QuickStart
                 LoadAvatar(avatarUrl);
             }
         }
-
+        string ExtractAvatarId(string url)
+        {
+            // Split the URL by '/'
+            string[] parts = url.Split('/');
+            // Get the last part
+            string lastPart = parts[parts.Length - 1];
+            // Remove the '.glb' extension
+            string id = lastPart.Replace(".glb", "");
+            return id;
+        }
         private void OnLoadFailed(object sender, FailureEventArgs args)
         {
             OnLoadComplete?.Invoke();
         }
 
+        [Obsolete("Obsolete")]
         private void OnLoadCompleted(object sender, CompletionEventArgs args)
         {
             if (previewAvatar != null)
@@ -68,6 +78,7 @@ namespace ReadyPlayerMe.Samples.QuickStart
             OnLoadComplete?.Invoke();
         }
 
+        [Obsolete("Obsolete")]
         private void SetupAvatar(GameObject targetAvatar)
         {
             if (avatar != null)
@@ -116,6 +127,38 @@ namespace ReadyPlayerMe.Samples.QuickStart
                 {
                     Debug.LogWarning("Player Image object not found in PlayerCanva.");
                 }
+                if (playerName != null)
+                {
+                    Text playerNameText = playerName.GetComponent<Text>();
+                    if (playerNameText != null)
+                    {
+                        // Extract the avatar ID from the URL
+                        string avatarId = ExtractAvatarId(avatarUrl);
+                        // Search for the avatar name in the database using the avatar ID
+                        
+                        StartCoroutine(WaitForAvatarResponse(avatarId, playerNameText));
+                        
+                        /*StartCoroutine(Main.Instance.Web.GetAvatar(avatarId,
+                            obj =>
+                            {
+                                // Check if playerNameText is not null before accessing it
+                                if (playerNameText != null)
+                                {
+                                    playerNameText.text = obj != null ? obj.avatarName : "Unknown"; // Ensure obj is not null before accessing its properties
+                                    print(obj != null ? obj.avatarName : "Avatar is null");
+                                }
+                                else
+                                {
+                                    Debug.LogWarning("playerNameText is null!");
+                                }
+                            }
+                        ));*/
+                    }
+                    else
+                    {
+                        Debug.LogWarning("Text component not found on Player Name object.");
+                    }
+                }
             }
             else
             {
@@ -128,7 +171,23 @@ namespace ReadyPlayerMe.Samples.QuickStart
             //     controller.Setup(avatar, animatorController);
             // }
         }
-
+        [Obsolete("Obsolete")]
+        IEnumerator WaitForAvatarResponse(string avatarId, Text playerNameText)
+        {
+            // Call GetAvatar method and wait for the response
+            yield return Main.Instance.Web.GetAvatar(avatarId, avatar =>
+            {
+                // Check if playerNameText is not null before accessing it
+                if (playerNameText != null)
+                {
+                    playerNameText.text = avatar != null ? avatar.avatarName : "Unknown"; // Ensure avatar is not null before accessing its properties
+                }
+                else
+                {
+                    Debug.LogWarning("playerNameText is null!");
+                }
+            });
+        }
         public void LoadAvatar(string url)
         {
             //remove any leading or trailing spaces

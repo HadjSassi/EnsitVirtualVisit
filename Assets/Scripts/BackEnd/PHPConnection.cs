@@ -4,12 +4,14 @@ using System.Collections.Generic;
 using BackEnd.Model;
 using UnityEngine;
 using UnityEngine.Networking;
+using Avatar = BackEnd.Model.Avatar;
 
 public class Web : MonoBehaviour
 {
     
     private List<Affiche> affichesList = new List<Affiche>();
     private List<Stand> standsList = new List<Stand>();
+    private Avatar _avatar = new Avatar();
     
     private void Start()
     {
@@ -166,5 +168,78 @@ public class Web : MonoBehaviour
             }
         }
     }
+    
+    
+    
+    [Obsolete("Obsolete")]
+    public IEnumerator GetAvatar(string url, Action<Avatar> callback)
+    {
+        using (UnityWebRequest www = UnityWebRequest.Get("http://localhost:1234/avatar.php?url=" + url))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.isNetworkError || www.isHttpError)
+            {
+                Debug.LogError(www.error);
+            }
+            else
+            {
+                Avatar avatar = ParseJSONToAvatar(www.downloadHandler.text);
+                callback?.Invoke(avatar);
+            }
+        }
+    }
+
+    Avatar ParseJSONToAvatar2(string jsonData)
+    {
+        string[] lines = jsonData.Split(new string[] { "<br>" }, StringSplitOptions.RemoveEmptyEntries);
+        foreach (string line in lines)
+        {
+            string[] data = line.Split(new string[] { " || " }, StringSplitOptions.None);
+            if (data.Length >= 8)
+            {
+                Avatar avatar = new Avatar();
+                avatar.avatarName = data[0].Trim();
+                avatar.description = data[1].Trim();
+                avatar.jokes = data[2].Trim();
+                avatar.existant = bool.Parse(data[3].Trim());
+                avatar.npc = bool.Parse(data[4].Trim());
+                avatar.sexe = data[5].Trim();
+                avatar.mail = data[6].Trim();
+                return avatar; // Return the created Avatar instance
+            }
+        }
+
+        return null; // Return null if no valid avatar data found
+    }
+    
+    
+    Avatar ParseJSONToAvatar(string jsonData)
+    {
+        string[] lines = jsonData.Split(new string[] { "<br>" }, StringSplitOptions.RemoveEmptyEntries);
+        foreach (string line in lines)
+        {
+            string[] data = line.Split(new string[] { " || " }, StringSplitOptions.None);
+            if (data.Length >= 7) // Ensure that data array has at least 7 elements
+            {
+                Avatar avatar = new Avatar();
+                avatar.avatarName = data[0].Trim();
+                avatar.description = data[1].Trim();
+                avatar.jokes = data[2].Trim();
+                avatar.existant = Int32.Parse(data[3].Trim()) == 1;
+                avatar.npc = Int32.Parse(data[4].Trim()) == 1;
+                avatar.sexe = data[5].Trim();
+                avatar.mail = data[6].Trim();
+        
+                // Log parsed avatar data
+                // Add logging for other avatar attributes
+                return avatar; // Return the created Avatar instance
+            }
+        }
+        return null; // Return null if no valid avatar data found
+    }
+
+
+
     
 }
