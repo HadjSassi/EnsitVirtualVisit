@@ -8,13 +8,13 @@ public class PlayerInteractions : MonoBehaviour
     public static readonly string CanvasOfEchap = "CanvaEchap";
     private GameObject canvaInteractable, canvaEchap;
     public static bool isInInformationCollider;
-    private Text nameOfInteractableText; 
+    private Text nameOfInteractableText;
     private Text descriptionOfInteractableText;
     private Text typeOfInteractableText;
     private Image imageOfInteractableText;
     private Button linkOfInteractable;
     private Affiche currentAffiche;
-    private string AfficheType;
+    private Stand currentStand;
 
     void Start()
     {
@@ -35,6 +35,7 @@ public class PlayerInteractions : MonoBehaviour
             {
                 Debug.LogError("Child named imageOfInteractableText not found under CanvaI.");
             }
+
             Transform typeOfInteractableTransform = canvaInteractable.transform.Find("TypeOfInteractable");
             if (typeOfInteractableTransform != null)
             {
@@ -48,6 +49,7 @@ public class PlayerInteractions : MonoBehaviour
             {
                 Debug.LogError("Child named typeOfInteractableText not found under CanvaI.");
             }
+
             Transform nameOfInteractableTransform = canvaInteractable.transform.Find("NameOfInteractable");
             if (nameOfInteractableTransform != null)
             {
@@ -61,6 +63,7 @@ public class PlayerInteractions : MonoBehaviour
             {
                 Debug.LogError("Child named NameOfInteractable not found under CanvaI.");
             }
+
             Transform linkInteractableTransform = canvaInteractable.transform.Find("LinkToInteractable");
             if (linkInteractableTransform != null)
             {
@@ -74,7 +77,9 @@ public class PlayerInteractions : MonoBehaviour
             {
                 Debug.LogError("Child named linkOfInteractable not found under CanvaI.");
             }
-            Transform descriptionOfInteractableTransform = canvaInteractable.transform.Find("DescriptionOfInteractable");
+
+            Transform descriptionOfInteractableTransform =
+                canvaInteractable.transform.Find("DescriptionOfInteractable");
             if (descriptionOfInteractableTransform != null)
             {
                 descriptionOfInteractableText = descriptionOfInteractableTransform.GetComponent<Text>();
@@ -87,6 +92,7 @@ public class PlayerInteractions : MonoBehaviour
             {
                 Debug.LogError("Child named descriptionOfInteractableText not found under CanvaI.");
             }
+
             canvaInteractable.SetActive(false);
             canvaEchap.SetActive(false);
         }
@@ -135,32 +141,63 @@ public class PlayerInteractions : MonoBehaviour
         {
             isInInformationCollider = true;
 
-            CurrentAfficheScript currentAfficheScript = other.GetComponentInChildren<CurrentAfficheScript>();
-            if (currentAfficheScript != null)
+            CurrentCanvaScript currentCanvaScript = other.GetComponentInChildren<CurrentCanvaScript>();
+            if (currentCanvaScript != null)
             {
-                currentAffiche = currentAfficheScript.CurrentAffiche;
-                AfficheType = currentAfficheScript.typeAffiche;
-                if (currentAffiche == null)
+                if (currentCanvaScript.typeObject == 1)
                 {
-                    Debug.LogError("Current Affiche not set in the CurrentAfficheScript.");
-                }
-                else
-                {
-                    nameOfInteractableText.text = currentAffiche.titre;
-                    descriptionOfInteractableText.text = currentAffiche.description;
-                    typeOfInteractableText.text = AfficheType ;
-                    linkOfInteractable.onClick.AddListener(() => OpenLink(currentAffiche.lien));
-                    // Load image from local path
-                    Texture2D texture = LoadTextureFromFile(currentAffiche.image);
-                    if (texture != null)
+                    currentAffiche = currentCanvaScript.CurrentAffiche;
+                    if (currentAffiche == null)
                     {
-                        // Convert texture to sprite and assign it to the Image component
-                        Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
-                        imageOfInteractableText.sprite = sprite;
+                        Debug.LogError("Current Affiche not set in the CurrentAfficheScript.");
                     }
                     else
                     {
-                        Debug.LogError("Failed to load image from path: " + currentAffiche.image);
+                        nameOfInteractableText.text = currentAffiche.titre;
+                        descriptionOfInteractableText.text = currentAffiche.description;
+                        typeOfInteractableText.text = currentAffiche.sujet;
+                        linkOfInteractable.onClick.AddListener(() => OpenLink(currentAffiche.lien));
+                        // Load image from local path
+                        Texture2D texture = LoadTextureFromFile(currentAffiche.image);
+                        if (texture != null)
+                        {
+                            // Convert texture to sprite and assign it to the Image component
+                            Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height),
+                                Vector2.zero);
+                            imageOfInteractableText.sprite = sprite;
+                        }
+                        else
+                        {
+                            Debug.LogError("Failed to load image from path: " + currentAffiche.image);
+                        }
+                    }
+                }
+                if (currentCanvaScript.typeObject == 2)
+                {
+                    currentStand = currentCanvaScript.CurrentStand;
+                    if (currentStand == null)
+                    {
+                        Debug.LogError("Current Stand not set in the CurrentCanvaScript.");
+                    }
+                    else
+                    {
+                        nameOfInteractableText.text = currentStand.nom;
+                        descriptionOfInteractableText.text = currentStand.description;
+                        typeOfInteractableText.text = currentStand.sujet;
+                        linkOfInteractable.onClick.AddListener(() => OpenLink(currentStand.lien));
+                        // Load image from local path
+                        Texture2D texture = LoadTextureFromFile(currentStand.image);
+                        if (texture != null)
+                        {
+                            // Convert texture to sprite and assign it to the Image component
+                            Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height),
+                                Vector2.zero);
+                            imageOfInteractableText.sprite = sprite;
+                        }
+                        else
+                        {
+                            Debug.LogError("Failed to load image from path: " + currentStand.image);
+                        }
                     }
                 }
             }
@@ -185,7 +222,7 @@ public class PlayerInteractions : MonoBehaviour
             return null;
         }
     }
-    
+
     private void OpenLink(string url)
     {
         Application.OpenURL(url);

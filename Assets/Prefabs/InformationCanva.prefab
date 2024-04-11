@@ -312,6 +312,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Logo & Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8349245922142195501, guid: df375465983f2ce4dad62cbf8d11e91d, type: 3}
+      propertyPath: m_TagString
+      value: PlayerCanva
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -664,19 +668,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1954022877890823061}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8791872662917557034}
-        m_TargetAssemblyTypeName: CanvasInteractableController, Assembly-CSharp
-        m_MethodName: LinkClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1954022877890823061 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5696256453953562633, guid: 5d94ad11d38b4d043ad6e31e929caa5b, type: 3}

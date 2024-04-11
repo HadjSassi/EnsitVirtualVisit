@@ -9,6 +9,7 @@ public class Web : MonoBehaviour
 {
     
     private List<Affiche> affichesList = new List<Affiche>();
+    private List<Stand> standsList = new List<Stand>();
     
     private void Start()
     {
@@ -124,5 +125,46 @@ public class Web : MonoBehaviour
         }
     }
 
+    
+    [Obsolete("Obsolete")]
+    public IEnumerator GetStands(Action<List<Stand>> callback)
+    {
+        using (WWW www = new WWW("http://localhost:1234/stand.php"))
+        {
+            yield return www;
+
+            if (!string.IsNullOrEmpty(www.error))
+            {
+                Debug.LogError("Error fetching stands: " + www.error);
+            }
+            else
+            {
+                ParseJSONToStands(www.text);
+                callback?.Invoke(standsList); 
+            }
+        }
+    }
+    
+    void ParseJSONToStands(string jsonData)
+    {
+        string[] lines = jsonData.Split("<br>");
+        foreach (string line in lines)
+        {
+            string[] data = line.Split(" || ");
+            if (data.Length >= 8)
+            {
+                Stand obj = new Stand();
+                obj.idStand = int.Parse(data[0].Trim());
+                obj.nom = data[1].Trim();
+                obj.sujet = data[2].Trim();
+                obj.description = data[3].Trim();
+                obj.standType = int.Parse(data[4].Trim());
+                obj.image = data[5].Trim();
+                obj.prix = int.Parse(data[6].Trim());
+                obj.lien = data[7].Trim();
+                standsList.Add(obj);
+            }
+        }
+    }
     
 }

@@ -37,7 +37,7 @@ public class AffichesScript : MonoBehaviour
         {
             Transform frontBanner = afficheObject.transform.Find("Root/Banner/Banner_0/frontBanner");
             Transform interactable = afficheObject.transform.Find("Position/Interaction");
-            CurrentAfficheScript currentAfficheScript = interactable.GetComponent<CurrentAfficheScript>();
+            CurrentCanvaScript currentCanvaScript = interactable.GetComponent<CurrentCanvaScript>();
             if (frontBanner != null)
             {
                 Renderer renderer = frontBanner.GetComponent<Renderer>();
@@ -47,9 +47,9 @@ public class AffichesScript : MonoBehaviour
                     if (material != null)
                     {
                         StartCoroutine(ChangeMaterialTexture(material, affichesLocalisation1[i].couverture));
-                        currentAfficheScript.CurrentAffiche = affichesLocalisation1[i];
-                        currentAfficheScript.idAffiche = affichesLocalisation1[i].idAffiche;
-                        currentAfficheScript.typeAffiche = "Affiche";
+                        currentCanvaScript.CurrentAffiche = affichesLocalisation1[i];
+                        currentCanvaScript.typeObject = 1;
+                        currentCanvaScript.typeAffiche = "Affiche";
                     } else
                     {
                         print("Material is null.");
@@ -72,7 +72,7 @@ public class AffichesScript : MonoBehaviour
         {
             MeshRenderer meshRenderer = adBannerObject.GetComponent<MeshRenderer>();
             Transform interactable = adBannerObject.transform.Find("Position/Interaction");
-            CurrentAfficheScript currentAfficheScript = interactable.GetComponent<CurrentAfficheScript>();
+            CurrentCanvaScript currentCanvaScript = interactable.GetComponent<CurrentCanvaScript>();
 
             if (meshRenderer != null && meshRenderer.materials.Length >= 3)
             {
@@ -80,9 +80,9 @@ public class AffichesScript : MonoBehaviour
                 if (material != null)
                 {
                     StartCoroutine(ChangeMaterialTexture(material, affichesLocalisation2[i].couverture)); 
-                    currentAfficheScript.CurrentAffiche = affichesLocalisation2[i];
-                    currentAfficheScript.idAffiche = affichesLocalisation2[i].idAffiche;
-                    currentAfficheScript.typeAffiche = "Affiche";
+                    currentCanvaScript.CurrentAffiche = affichesLocalisation2[i];
+                    currentCanvaScript.typeObject = 1;
+                    currentCanvaScript.typeAffiche = "Affiche";
                 }
                 else
                 {
