@@ -32,7 +32,6 @@ if (isset($_GET['url'])) {
                   $row['description'] . " || " .
                   $row['jokes'] . " || " .
                   $row['existant'] . " || " .
-                  $row['npc'] . " || " .
                   $row['sexe'] . " || " .
                  $row['mail'] . "<br>";
         }
@@ -40,7 +39,43 @@ if (isset($_GET['url'])) {
         echo "No results found for the provided URL.";
     }
 } else {
-    echo "URL parameter is not set.";
+    // Prepare a SQL statement to select avatar details based on the URL
+        $sql = "SELECT * FROM Avatar WHERE mail = '' ORDER BY RAND()";
+
+                // Execute the SQL statement
+                $result = $conn->query($sql);
+
+                if ($result->num_rows > 0) {
+                    // Output data of each row
+                    while ($row = $result->fetch_assoc()) {
+                        echo  $row['url'] . " || " .
+                              $row['avatarName'] . " || " .
+                              $row['description'] . " || " .
+                              $row['jokes'] . " || " .
+                              $row['existant'] . " || " .
+                              $row['sexe'] . " || " .
+                             $row['mail'] . "<br>";
+                    }
+                }
+
+        echo "-*-*-";
+        $sql = "SELECT * FROM Avatar WHERE mail != '' ORDER BY RAND()";
+
+                // Execute the SQL statement
+                $result = $conn->query($sql);
+
+                if ($result->num_rows > 0) {
+                    // Output data of each row
+                    while ($row = $result->fetch_assoc()) {
+                        echo  $row['url'] . " || " .
+                              $row['avatarName'] . " || " .
+                              $row['description'] . " || " .
+                              $row['jokes'] . " || " .
+                              $row['existant'] . " || " .
+                              $row['sexe'] . " || " .
+                             $row['mail'] . "<br>";
+                    }
+                }
 }
 
 // Close connection

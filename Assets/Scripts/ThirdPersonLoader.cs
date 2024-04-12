@@ -137,22 +137,6 @@ namespace ReadyPlayerMe.Samples.QuickStart
                         // Search for the avatar name in the database using the avatar ID
                         
                         StartCoroutine(WaitForAvatarResponse(avatarId, playerNameText));
-                        
-                        /*StartCoroutine(Main.Instance.Web.GetAvatar(avatarId,
-                            obj =>
-                            {
-                                // Check if playerNameText is not null before accessing it
-                                if (playerNameText != null)
-                                {
-                                    playerNameText.text = obj != null ? obj.avatarName : "Unknown"; // Ensure obj is not null before accessing its properties
-                                    print(obj != null ? obj.avatarName : "Avatar is null");
-                                }
-                                else
-                                {
-                                    Debug.LogWarning("playerNameText is null!");
-                                }
-                            }
-                        ));*/
                     }
                     else
                     {
@@ -165,11 +149,6 @@ namespace ReadyPlayerMe.Samples.QuickStart
                 Debug.LogWarning("PlayerCanva object not found in the scene.");
             }
 
-            // var controller = GetComponent<ThirdPersonController>();
-            // if (controller != null)
-            // {
-            //     controller.Setup(avatar, animatorController);
-            // }
         }
         [Obsolete("Obsolete")]
         IEnumerator WaitForAvatarResponse(string avatarId, Text playerNameText)

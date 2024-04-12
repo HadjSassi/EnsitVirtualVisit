@@ -118,7 +118,7 @@ public class PlayerMovement : MonoBehaviour
     void ApplyGravity()
     {
         verticalVelocity -= gravity * Time.deltaTime;
-        PlayerJumb();
+        // PlayerJumb();
         moveDirection.y = verticalVelocity * Time.deltaTime;
     }
 

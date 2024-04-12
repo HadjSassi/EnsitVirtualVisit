@@ -309,10 +309,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Holder
       objectReference: {fileID: 0}
-    - target: {fileID: 5120374047822370879, guid: b5e780cfda18ab9469c25deff06532aa, type: 3}
-      propertyPath: avatarUrl
-      value: https://models.readyplayer.me/6602294075cd33aaccbb3041.glb
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

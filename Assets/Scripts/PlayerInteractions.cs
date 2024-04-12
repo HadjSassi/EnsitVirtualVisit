@@ -1,6 +1,9 @@
+using System.Collections;
 using BackEnd.Model;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UI;
+using Avatar = BackEnd.Model.Avatar;
 
 public class PlayerInteractions : MonoBehaviour
 {
@@ -15,7 +18,7 @@ public class PlayerInteractions : MonoBehaviour
     private Button linkOfInteractable;
     private Affiche currentAffiche;
     private Stand currentStand;
-
+    private Avatar currentAvatar;
     void Start()
     {
         canvaInteractable = GameObject.FindWithTag(CanvasOfInteractable);
@@ -156,6 +159,7 @@ public class PlayerInteractions : MonoBehaviour
                         nameOfInteractableText.text = currentAffiche.titre;
                         descriptionOfInteractableText.text = currentAffiche.description;
                         typeOfInteractableText.text = currentAffiche.sujet;
+                        linkOfInteractable.interactable = true;
                         linkOfInteractable.onClick.AddListener(() => OpenLink(currentAffiche.lien));
                         // Load image from local path
                         Texture2D texture = LoadTextureFromFile(currentAffiche.image);
@@ -184,6 +188,7 @@ public class PlayerInteractions : MonoBehaviour
                         nameOfInteractableText.text = currentStand.nom;
                         descriptionOfInteractableText.text = currentStand.description;
                         typeOfInteractableText.text = currentStand.sujet;
+                        linkOfInteractable.interactable = true;
                         linkOfInteractable.onClick.AddListener(() => OpenLink(currentStand.lien));
                         // Load image from local path
                         Texture2D texture = LoadTextureFromFile(currentStand.image);
@@ -200,6 +205,26 @@ public class PlayerInteractions : MonoBehaviour
                         }
                     }
                 }
+                if (currentCanvaScript.typeObject == 3)
+                {
+                    currentAvatar = currentCanvaScript.CurrentAvatar;
+                    if (currentAvatar == null)
+                    {
+                        Debug.LogError("Current Avatar not set in the currentAvatar.");
+                    }
+                    else
+                    {
+                        nameOfInteractableText.text = currentAvatar.avatarName;
+                        descriptionOfInteractableText.text = currentAvatar.description;
+                        typeOfInteractableText.text = "NPC";
+                        // linkOfInteractable.onClick.AddListener(() => OpenLink(currentAvatar.lien));
+                        // Load image from local path
+                        linkOfInteractable.interactable = false;
+                        Texture2D texture = new Texture2D(1, 1); 
+                        imageOfInteractableText.sprite = Sprite.Create(texture, new Rect(0, 0, 1, 1), Vector2.zero);
+                        StartCoroutine(FetchImageFromWeb(ExtractAvatarImage(currentAvatar.url)));
+                    }
+                }
             }
             else
             {
@@ -208,6 +233,12 @@ public class PlayerInteractions : MonoBehaviour
         }
     }
 
+    string ExtractAvatarImage(string url)
+    {
+        string modifiedUrl = "https://models.readyplayer.me/" + url + ".png";
+        return modifiedUrl;
+    }
+    
     private Texture2D LoadTextureFromFile(string filePath)
     {
         byte[] fileData = System.IO.File.ReadAllBytes(filePath);
@@ -228,7 +259,6 @@ public class PlayerInteractions : MonoBehaviour
         Application.OpenURL(url);
     }
 
-
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Information"))
@@ -241,6 +271,25 @@ public class PlayerInteractions : MonoBehaviour
 
             isInInformationCollider = false;
             currentAffiche = null;
+        }
+    }
+    
+    private IEnumerator FetchImageFromWeb(string url)
+    {
+        using (UnityWebRequest www = UnityWebRequestTexture.GetTexture(url))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result == UnityWebRequest.Result.ConnectionError || www.result == UnityWebRequest.Result.ProtocolError)
+            {
+                Debug.LogError("Error fetching image: " + www.error);
+            }
+            else
+            {
+                Texture2D texture = DownloadHandlerTexture.GetContent(www);
+                Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
+                imageOfInteractableText.sprite = sprite;
+            }
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using BackEnd.Model;
 using UnityEngine;
 using UnityEngine.Serialization;
+using Avatar = BackEnd.Model.Avatar;
 
 [System.Serializable]
 public class CurrentCanvaScript : MonoBehaviour
@@ -13,6 +14,9 @@ public class CurrentCanvaScript : MonoBehaviour
     
     [SerializeField]
     private Stand currentStand;
+    
+    [SerializeField]
+    private Avatar currentAvatar;
 
     public int typeObject;// 1 for poster, 2 for stands and 3 for avatars
     public string typeAffiche;
@@ -22,6 +26,11 @@ public class CurrentCanvaScript : MonoBehaviour
     {
         get { return currentAffiche; }
         set { currentAffiche = value; }
+    }
+     public Avatar CurrentAvatar
+    {
+        get { return currentAvatar; }
+        set { currentAvatar = value; }
     }
     
     public Stand CurrentStand
