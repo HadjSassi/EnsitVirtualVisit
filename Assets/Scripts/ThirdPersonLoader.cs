@@ -3,14 +3,13 @@ using System.Collections;
 using ReadyPlayerMe.Core;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace ReadyPlayerMe.Samples.QuickStart
 {
     public class ThirdPersonLoader : MonoBehaviour
     {
-        //todo mahdi here you will search in the database the avatar name from the avatarUrl
-
         private string playerCanvaTag = "PlayerCanva";
 
         private readonly Vector3 avatarPositionOffset = new Vector3(0, 0, -1.07f);
@@ -21,8 +20,11 @@ namespace ReadyPlayerMe.Samples.QuickStart
         private GameObject avatar;
         private AvatarObjectLoader avatarObjectLoader;
 
-        [SerializeField] [Tooltip("Animator to use on loaded avatar")]
-        private RuntimeAnimatorController animatorController;
+        [SerializeField] [Tooltip("Animator to use on loaded avatar if it's a male")]
+        private RuntimeAnimatorController animatorMaleController;
+        
+        [SerializeField] [Tooltip("Animator to use on loaded avatar if it's a female")]
+        private RuntimeAnimatorController animatorFemaleController;
 
         [SerializeField] [Tooltip("If true it will try to load avatar from avatarUrl on start")]
         private bool loadOnStart = true;
@@ -99,7 +101,7 @@ namespace ReadyPlayerMe.Samples.QuickStart
             if (avatarAnimator != null)
             {
                 // Set the runtime animator controller
-                avatarAnimator.runtimeAnimatorController = animatorController;
+                avatarAnimator.runtimeAnimatorController = animatorMaleController;
             }
 
             // Find PlayerCanva object by tag
@@ -154,12 +156,33 @@ namespace ReadyPlayerMe.Samples.QuickStart
         IEnumerator WaitForAvatarResponse(string avatarId, Text playerNameText)
         {
             // Call GetAvatar method and wait for the response
-            yield return Main.Instance.Web.GetAvatar(avatarId, avatar =>
+            yield return Main.Instance.Web.GetAvatar(avatarId, avatar_ =>
             {
                 // Check if playerNameText is not null before accessing it
                 if (playerNameText != null)
                 {
-                    playerNameText.text = avatar != null ? avatar.avatarName : "Unknown"; // Ensure avatar is not null before accessing its properties
+                    playerNameText.text = avatar_ != null ? avatar_.avatarName : "Unknown"; // Ensure avatar is not null before accessing its properties
+                    if (avatar_.sexe == "F")
+                    {
+                        //set the feminieAnimator
+                        Animator avatarAnimator = avatar.GetComponent<Animator>();
+                        if (avatarAnimator != null)
+                        {
+                            // Set the runtime animator controller
+                            avatarAnimator.runtimeAnimatorController = animatorFemaleController;
+                        }
+                    }
+                    else
+                    {
+                        //set the masculineAnimator
+                        //set the feminieAnimator
+                        Animator avatarAnimator = avatar.GetComponent<Animator>();
+                        if (avatarAnimator != null)
+                        {
+                            // Set the runtime animator controller
+                            avatarAnimator.runtimeAnimatorController = animatorMaleController;
+                        }
+                    }
                 }
                 else
                 {

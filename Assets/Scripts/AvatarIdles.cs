@@ -49,8 +49,8 @@ public class AvatarIdles : MonoBehaviour
             {
                 if (waitingTime <= 0)
                 {
-                    // Generate a random number between 1 and 6 for the idle animation
-                    idleNumber = Random.Range(1, 7);
+                    // Generate a random number between 1 and 11 for the idle animation
+                    idleNumber = Random.Range(1, 12);
                     // Set the idle animation
                     animator.SetInteger(IdleNumber, idleNumber);
                 }
