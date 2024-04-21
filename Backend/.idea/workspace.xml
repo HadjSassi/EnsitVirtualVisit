@@ -2,279 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c96f53b2-e765-4019-9f17-217dff486aaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/Masculine_TPose.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/Masculine_TPose.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/F_Dances_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/F_Dances_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/F_Dances_004.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/F_Dances_004.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/F_Dances_005.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/F_Dances_005.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/F_Dances_006.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/F_Dances_006.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/F_Dances_007.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/F_Dances_007.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/M_Dances_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/M_Dances_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/M_Dances_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/M_Dances_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/M_Dances_003.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/M_Dances_003.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/M_Dances_004.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/M_Dances_004.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/M_Dances_005.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/M_Dances_005.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/M_Dances_006.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/M_Dances_006.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/M_Dances_007.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/M_Dances_007.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/M_Dances_008.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/M_Dances_008.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/M_Dances_009.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/M_Dances_009.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/M_Dances_011.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/M_Dances_011.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/dance/readme.md.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/F_Talking_Variations_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/F_Talking_Variations_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/F_Talking_Variations_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/F_Talking_Variations_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/F_Talking_Variations_003.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/F_Talking_Variations_003.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/F_Talking_Variations_004.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/F_Talking_Variations_004.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/F_Talking_Variations_005.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/F_Talking_Variations_005.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/F_Talking_Variations_006.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/F_Talking_Variations_006.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_004.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_004.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_005.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_005.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_006.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_006.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_007.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_007.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_008.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_008.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_009.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_009.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_010.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_010.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_011.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_011.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_012.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_012.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_013.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_013.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_014.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_014.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_015.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_015.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_016.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_016.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_017.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_017.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_018.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Standing_Expressions_018.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Talking_Variations_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Talking_Variations_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Talking_Variations_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Talking_Variations_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Talking_Variations_003.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Talking_Variations_003.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Talking_Variations_004.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Talking_Variations_004.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Talking_Variations_005.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Talking_Variations_005.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Talking_Variations_006.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Talking_Variations_006.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Talking_Variations_007.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Talking_Variations_007.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Talking_Variations_008.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Talking_Variations_008.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Talking_Variations_009.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Talking_Variations_009.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Talking_Variations_010.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/M_Talking_Variations_010.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/expression/readme.md.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/F_Standing_Idle_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/F_Standing_Idle_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/F_Standing_Idle_Variations_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/F_Standing_Idle_Variations_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/F_Standing_Idle_Variations_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/F_Standing_Idle_Variations_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/F_Standing_Idle_Variations_003.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/F_Standing_Idle_Variations_003.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/F_Standing_Idle_Variations_004.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/F_Standing_Idle_Variations_004.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/F_Standing_Idle_Variations_005.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/F_Standing_Idle_Variations_005.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/F_Standing_Idle_Variations_006.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/F_Standing_Idle_Variations_006.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/F_Standing_Idle_Variations_007.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/F_Standing_Idle_Variations_007.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/F_Standing_Idle_Variations_008.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/F_Standing_Idle_Variations_008.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/F_Standing_Idle_Variations_009.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/F_Standing_Idle_Variations_009.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_Variations_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_Variations_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_Variations_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_Variations_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_Variations_003.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_Variations_003.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_Variations_004.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_Variations_004.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_Variations_005.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_Variations_005.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_Variations_006.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_Variations_006.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_Variations_007.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_Variations_007.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_Variations_008.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_Variations_008.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_Variations_009.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_Variations_009.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_Variations_010.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/M_Standing_Idle_Variations_010.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/idle/readme.md.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Crouch_Strafe_Left.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Crouch_Strafe_Left.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Crouch_Strafe_Right.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Crouch_Strafe_Right.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Crouch_Walk_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Crouch_Walk_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_CrouchedWalk_Backwards_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_CrouchedWalk_Backwards_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Falling_Idle_000.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Falling_Idle_000.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Falling_Idle_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Falling_Idle_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Jog_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Jog_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Jog_Backwards_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Jog_Backwards_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Jog_Jump_Small_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Jog_Jump_Small_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Jog_Strafe_Left_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Jog_Strafe_Left_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Jog_Strafe_Right_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Jog_Strafe_Right_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Run_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Run_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Run_Backwards_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Run_Backwards_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Run_Jump_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Run_Jump_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Run_Strafe_Left_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Run_Strafe_Left_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Run_Strafe_Right_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Run_Strafe_Right_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Walk_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Walk_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Walk_003.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Walk_003.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Walk_Backwards_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Walk_Backwards_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Walk_Jump_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Walk_Jump_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Walk_Jump_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Walk_Jump_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Walk_Strafe_Left_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Walk_Strafe_Left_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Walk_Strafe_Right_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/F_Walk_Strafe_Right_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Crouch_Strafe_Left_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Crouch_Strafe_Left_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Crouch_Strafe_Right_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Crouch_Strafe_Right_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Crouch_Walk_003.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Crouch_Walk_003.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_CrouchedWalk_Backwards_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_CrouchedWalk_Backwards_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Falling_Idle_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Falling_Idle_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Jog_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Jog_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Jog_003.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Jog_003.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Jog_Backwards_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Jog_Backwards_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Jog_Jump_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Jog_Jump_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Jog_Jump_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Jog_Jump_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Jog_Strafe_Left_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Jog_Strafe_Left_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Jog_Strafe_Right_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Jog_Strafe_Right_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Run_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Run_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Run_Backwards_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Run_Backwards_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Run_Jump_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Run_Jump_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Run_Jump_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Run_Jump_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Run_Strafe_Left_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Run_Strafe_Left_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Run_Strafe_Right_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Run_Strafe_Right_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Walk_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Walk_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Walk_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Walk_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Walk_Backwards_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Walk_Backwards_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Walk_Jump_001.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Walk_Jump_001.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Walk_Jump_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Walk_Jump_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Walk_Jump_003.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Walk_Jump_003.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Walk_Strafe_Left_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Walk_Strafe_Left_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Walk_Strafe_Right_002.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/M_Walk_Strafe_Right_002.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/fbxMasculine/locomotion/readme.md.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/femnineAnimator.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/femnineAnimator.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/masculineAnimator.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Animations/masculineAnimator.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Library/ProtocolInstance.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Library/LastBuild.buildreport" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Library/SplashScreenCache/1c/1c10ce0bdf3b1e9270feb9e0f3465cc0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Library/SplashScreenCache/dc/dc623cf0ed2b090f563ed55c1eaaf50e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Logs/AssetImportWorker0-prev.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Logs/AssetImportWorker1-prev.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjectSettings/BurstAotSettings_WebGL.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjectSettings/CommonBurstAotSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Temp/EditorBuildOutput/MethodMap.tsv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Temp/EditorBuildOutput/UnityLinkerToEditorData.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Temp/PlayerBuildAnalyticsEvents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Temp/StagingArea/Data/Managed/EditorToUnityLinkerData.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Temp/StagingArea/Data/Managed/MethodsToPreserve.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Temp/StagingArea/Data/Managed/SerializedTypes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Temp/StagingArea/Data/Managed/TypesInScenes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Temp/StagingArea/Data/RuntimeInitializeOnLoads.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Temp/StagingArea/Data/ScriptingAssemblies.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Temp/StagingArea/Data/boot.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Temp/StagingArea/Data/data.unity3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Temp/StagingArea/Data/sharedassets0.resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Temp/StagingArea/Data/testExecute.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UserSettings/Search.index" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Prefabs/InformationCanva.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Prefabs/InformationCanva.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Assets/Scenes/modernScene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scenes/modernScene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/avatarUrls.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/avatarUrls.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Scripts/AvatarsScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/AvatarsScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Scripts/CanvasInteractableController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/CanvasInteractableController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Scripts/PlayerInteractions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/PlayerInteractions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Library/Bee/TundraBuildState.state" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/Bee/TundraBuildState.state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/Bee/artifacts/rsp/4747638433968585886.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/Bee/artifacts/rsp/4747638433968585886.rsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Library/Bee/fullprofile.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/Bee/fullprofile.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/05f0b8c4817d4d3e8980ea08322ccddf.bhc" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/05f0b8c4817d4d3e8980ea08322ccddf.bhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/1b32dd62c44741036c1a7c4dfd861a5f.bhc" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/1b32dd62c44741036c1a7c4dfd861a5f.bhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/3aa7767756913884e27019266e846ff5.bhc" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/3aa7767756913884e27019266e846ff5.bhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/408cd4a290c7c13b57d05638f468e037.bhc" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/408cd4a290c7c13b57d05638f468e037.bhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/53a447354fede0803cf639cd158afe68.bhc" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/53a447354fede0803cf639cd158afe68.bhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/5ed5015b734bdfe5c2aa268fb2708b8c.bhc" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/5ed5015b734bdfe5c2aa268fb2708b8c.bhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/64033ffd7f035767161f02cae525ba9f.bhc" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/64033ffd7f035767161f02cae525ba9f.bhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/82d05585814f2d375d3efddbd2f20b14.bhc" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/82d05585814f2d375d3efddbd2f20b14.bhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/863b94390255051efa675ad42b819026.bhc" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/863b94390255051efa675ad42b819026.bhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/beb497e134b24e0d443f6a91ee099283.bhc" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/beb497e134b24e0d443f6a91ee099283.bhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/beceab8afacc46b55a2754c784654711.bhc" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/beceab8afacc46b55a2754c784654711.bhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/c43e26314a7418c45fb0e2588fdce792.bhc" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/c43e26314a7418c45fb0e2588fdce792.bhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/e280f7a2a7bd4e990528db890a95b139.bhc" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/e280f7a2a7bd4e990528db890a95b139.bhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/e331c7b1fa5090f90a7bd7c89ae8bb33.bhc" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/e331c7b1fa5090f90a7bd7c89ae8bb33.bhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/eb5762c176c563408800b67be30a9bca.bhc" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/BurstCache/JIT/Hashes/eb5762c176c563408800b67be30a9bca.bhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/EditorUserBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/EditorUserBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ProtocolInstance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/ReadyPlayerMe.Core.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/ReadyPlayerMe.Core.Editor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/ReadyPlayerMe.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/ReadyPlayerMe.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/ReadyPlayerMe.Samples.AvatarCreatorElements.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/ReadyPlayerMe.Samples.AvatarCreatorElements.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/ReadyPlayerMe.Samples.QuickStart.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/ReadyPlayerMe.Samples.QuickStart.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.Burst.CodeGen.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.Burst.CodeGen.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.Burst.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.Burst.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.Burst.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.Burst.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.Mathematics.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.Mathematics.Editor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.Rider.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.Rider.Editor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.Timeline.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.Timeline.Editor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.Timeline.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.Timeline.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.VSCode.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.VSCode.Editor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.VisualScripting.State.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.VisualScripting.State.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/UnityEditor.TestRunner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/UnityEditor.TestRunner.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/UnityEditor.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/UnityEditor.UI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/UnityEngine.TestRunner.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/UnityEngine.TestRunner.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/glTFast.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/glTFast.Editor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/ScriptAssemblies/glTFast.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ScriptAssemblies/glTFast.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Library/Search/transactions.db" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/Search/transactions.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Library/com.unity.ide.rider/PersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/com.unity.ide.rider/PersistedState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logs/AssetImportWorker0-prev.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logs/AssetImportWorker1-prev.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadyPlayerMe.AvatarCreator.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../ReadyPlayerMe.AvatarCreator.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadyPlayerMe.AvatarCreator.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../ReadyPlayerMe.AvatarCreator.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/../UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obj/Debug/ReadyPlayerMe.Samples.AvatarCreatorWizard.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../obj/Debug/ReadyPlayerMe.Samples.AvatarCreatorWizard.csproj.AssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -339,7 +149,7 @@
       <workItem from="1713286476834" duration="363000" />
       <workItem from="1713346355753" duration="58000" />
       <workItem from="1713347514432" duration="42000" />
-      <workItem from="1713630764873" duration="610000" />
+      <workItem from="1713630764873" duration="2602000" />
     </task>
     <servers />
   </component>

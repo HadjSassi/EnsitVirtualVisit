@@ -10,14 +10,6 @@ public class CanvasInteractableController : MonoBehaviour
         canvas.SetActive(false);
         MouseCursorLock.Instance.Apply();
     }
-
-
-    public void Resume()
-    {
-        print("Resume");
-        GameObject canvas = GameObject.FindWithTag(PlayerInteractions.CanvasOfEchap);
-        canvas.SetActive(false);
-        MouseCursorLock.Instance.Apply();
-    }
+    
     
 }

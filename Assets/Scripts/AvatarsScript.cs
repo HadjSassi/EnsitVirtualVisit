@@ -18,6 +18,8 @@ public class AvatarsScript : MonoBehaviour
     [SerializeField] private GameObject[] previewNpcAvatars;
     private TransformData[] previewNpcTransforms; // Array to store transform data
     [SerializeField] private GameObject[] NpcAvatars;
+    [SerializeField] private GameObject positionXPrefab; // Assign the prefab in the Unity Editor
+
     public event Action OnLoadComplete;
     [Serializable]
     public struct TransformData
@@ -113,21 +115,19 @@ public class AvatarsScript : MonoBehaviour
         NpcAvatars[index].transform.SetAsFirstSibling();
         NpcAvatars[index].transform.position = previewNpcTransforms[index].position;
         NpcAvatars[index].transform.rotation = previewNpcTransforms[index].rotation;
-
-        string pathToPrefab = "Assets/Prefabs/Position.prefab";
-        GameObject positionXPrefab = UnityEditor.AssetDatabase.LoadAssetAtPath<GameObject>(pathToPrefab);
+        
         if (positionXPrefab != null)
         {
             // Instantiate PositionX prefab and set it as a child of NpcAvatars[index]
             GameObject positionX = Instantiate(positionXPrefab, NpcAvatars[index].transform);
-            positionX.transform.localPosition = new Vector3(0.00300000003f,1.72599995f,0.00100000005f);
+            positionX.transform.localPosition = new Vector3(0.00300000003f, 1.72599995f, 0.00100000005f);
             positionX.transform.localRotation = Quaternion.identity;
             positionX.transform.localScale = new Vector3(0.0868599862f, 0.112799995f, 0.0665499792f);
             positionX.name = "Position"; // Ensure the name is set to PositionX
         }
         else
         {
-            Debug.LogWarning("PositionX prefab not found at path: " + pathToPrefab);
+            Debug.LogWarning("PositionX prefab not found in Resources folder.");
         }
         
         Collider originalCollider = previewNpcTransforms[index].collider;

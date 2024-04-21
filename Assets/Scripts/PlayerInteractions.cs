@@ -8,8 +8,7 @@ using Avatar = BackEnd.Model.Avatar;
 public class PlayerInteractions : MonoBehaviour
 {
     public static readonly string CanvasOfInteractable = "CanvaI";
-    public static readonly string CanvasOfEchap = "CanvaEchap";
-    private GameObject canvaInteractable, canvaEchap;
+    private GameObject canvaInteractable;
     public static bool isInInformationCollider;
     private Text nameOfInteractableText;
     private Text descriptionOfInteractableText;
@@ -22,8 +21,7 @@ public class PlayerInteractions : MonoBehaviour
     void Start()
     {
         canvaInteractable = GameObject.FindWithTag(CanvasOfInteractable);
-        canvaEchap = GameObject.FindWithTag(CanvasOfEchap);
-        if (canvaInteractable != null && canvaEchap != null)
+        if (canvaInteractable != null)
         {
             Transform imageOfInteractableTransform = canvaInteractable.transform.Find("ImageOfInteractable");
             if (imageOfInteractableTransform != null)
@@ -97,7 +95,6 @@ public class PlayerInteractions : MonoBehaviour
             }
 
             canvaInteractable.SetActive(false);
-            canvaEchap.SetActive(false);
         }
 
         isInInformationCollider = false;
@@ -120,20 +117,6 @@ public class PlayerInteractions : MonoBehaviour
                 {
                     MouseCursorLock.Instance.Apply();
                 }
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            canvaEchap.SetActive(!canvaEchap.activeSelf);
-            // Update cursor settings based on canvas activity
-            if (canvaInteractable.activeSelf)
-            {
-                MouseCursorLock.Instance.SetCursorVisible(true);
-            }
-            else
-            {
-                MouseCursorLock.Instance.Apply();
             }
         }
     }
