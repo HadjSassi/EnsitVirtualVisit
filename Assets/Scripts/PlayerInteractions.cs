@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using BackEnd.Model;
 using UnityEngine;
@@ -145,7 +146,7 @@ public class PlayerInteractions : MonoBehaviour
                         linkOfInteractable.interactable = true;
                         linkOfInteractable.onClick.AddListener(() => OpenLink(currentAffiche.lien));
                         // Load image from local path
-                        Texture2D texture = LoadTextureFromFile(currentAffiche.image);
+                        /*Texture2D texture = LoadTextureFromFile(currentAffiche.image);
                         if (texture != null)
                         {
                             // Convert texture to sprite and assign it to the Image component
@@ -156,7 +157,20 @@ public class PlayerInteractions : MonoBehaviour
                         else
                         {
                             Debug.LogError("Failed to load image from path: " + currentAffiche.image);
-                        }
+                        }*/
+                        Action<Sprite> getAfficheCouvertureCallback = (downloadedSprite) =>
+                        {
+                            if (downloadedSprite != null)
+                            {
+                                imageOfInteractableText.sprite = downloadedSprite;
+                            }
+                            else
+                            {
+                                Debug.LogError("Failed to get affiche image.");
+                            }
+                        };
+                        StartCoroutine(Main.Instance.Web.GetAfficheImage(currentAffiche.image, getAfficheCouvertureCallback));
+
                     }
                 }
                 if (currentCanvaScript.typeObject == 2)
@@ -199,7 +213,7 @@ public class PlayerInteractions : MonoBehaviour
                     {
                         nameOfInteractableText.text = currentAvatar.avatarName;
                         descriptionOfInteractableText.text = currentAvatar.description;
-                        typeOfInteractableText.text = "NPC";
+                        typeOfInteractableText.text = "Avatar";
                         // linkOfInteractable.onClick.AddListener(() => OpenLink(currentAvatar.lien));
                         // Load image from local path
                         linkOfInteractable.interactable = false;

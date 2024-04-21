@@ -15,77 +15,6 @@ public class Web : MonoBehaviour
     private List<Avatar> avatarList = new List<Avatar>();
     private Avatar _avatar = new Avatar();
     
-    private void Start()
-    {
-        // StartCoroutine(GetDate());
-        // StartCoroutine(Login("testuser","123456"));
-    }
-
-    [Obsolete("Obsolete")]
-    IEnumerator GetDate()
-    {
-        using (UnityWebRequest www = UnityWebRequest.Get("http://localhost:1234/test.php"))
-        {
-            yield return www.SendWebRequest();
-
-            if (www.isNetworkError || www.isHttpError)
-            {
-                Debug.LogError(www.error);
-            }
-            else
-            {
-                Debug.Log(www.downloadHandler.text);
-
-                byte[] results = www.downloadHandler.data;
-            }
-        }
-    }
-    
-    
-    [Obsolete("Obsolete")]
-    IEnumerator GetUsers()
-    {
-        using (UnityWebRequest www = UnityWebRequest.Get("http://localhost:1234/test.php"))
-        {
-            yield return www.Send();
-
-            if (www.isNetworkError || www.isHttpError)
-            {
-                Debug.LogError(www.error);
-            }
-            else
-            {
-                Debug.Log(www.downloadHandler.text);
-
-                byte[] results = www.downloadHandler.data;
-            }
-        }
-    }
-
-
-    
-    [Obsolete("Obsolete")]
-    public IEnumerator Login(string username, string pass)
-    {
-
-        WWWForm form = new WWWForm();
-        form.AddField("loginUser",username);
-        form.AddField("loginPass",pass);
-        
-        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost:1234/login.php",form))
-        {
-            yield return www.SendWebRequest();
-
-            if (www.isNetworkError || www.isHttpError)
-            {
-                Debug.LogError(www.error);
-            }
-            else
-            {
-                Debug.Log(www.downloadHandler.text);
-            }
-        }
-    }
 
     [Obsolete("Obsolete")]
     public IEnumerator GetAffiches(Action<List<Affiche>> callback)
@@ -288,6 +217,39 @@ public class Web : MonoBehaviour
         avatar.mail = data[6].Trim();
 
         return avatar;
+    }
+
+    [Obsolete("Obsolete")]
+    public IEnumerator GetAfficheImage(string imageUrl, System.Action<Sprite> callback)
+    {
+        WWWForm form = new WWWForm();
+        using (UnityWebRequest www = UnityWebRequest.Get("http://localhost:1234/GetAfficheImage.php?image="+imageUrl))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.isNetworkError || www.isHttpError)
+            {
+                Debug.LogError(www.error);
+            }
+            else
+            {
+                byte[] bytes = www.downloadHandler.data;
+            
+                // Créer une Texture2D à partir des bytes
+                Texture2D texture = new Texture2D(2, 2);
+                if (texture.LoadImage(bytes))
+                {
+                    // Créer un Sprite à partir de la Texture2D
+                    Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height),
+                        new Vector2(0.5f, 0.5f));
+                    callback(sprite);
+                }
+                else
+                {
+                    Debug.LogError("Failed to load image bytes into Texture2D.");
+                }
+            }
+        }
     }
 
     

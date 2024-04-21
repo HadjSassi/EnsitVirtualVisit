@@ -46,7 +46,21 @@ public class AffichesScript : MonoBehaviour
                     Material material = renderer.materials[0];
                     if (material != null)
                     {
-                        StartCoroutine(ChangeMaterialTexture(material, affichesLocalisation1[i].couverture));
+                        Action<Sprite> getAfficheCouvertureCallback = (downloadedSprite) =>
+                        {
+                            if (downloadedSprite != null)
+                            {
+                                Material newMaterial = new Material(material);
+                                newMaterial.mainTexture = downloadedSprite.texture;
+                                renderer.material = newMaterial;
+                            }
+                            else
+                            {
+                                Debug.LogError("Failed to get affiche image.");
+                            }
+                        };
+                        StartCoroutine(Main.Instance.Web.GetAfficheImage(affichesLocalisation1[i].couverture, getAfficheCouvertureCallback));
+
                         currentCanvaScript.CurrentAffiche = affichesLocalisation1[i];
                         currentCanvaScript.typeObject = 1;
                         currentCanvaScript.typeAffiche = "Affiche";
@@ -79,7 +93,19 @@ public class AffichesScript : MonoBehaviour
                 Material material = meshRenderer.materials[2];
                 if (material != null)
                 {
-                    StartCoroutine(ChangeMaterialTexture(material, affichesLocalisation2[i].couverture)); 
+                    Action<Sprite> getAfficheCouvertureCallback = (downloadedSprite) =>
+                    {
+                        if (downloadedSprite != null)
+                        {
+                            material.mainTexture = downloadedSprite.texture;
+                        }
+                        else
+                        {
+                            Debug.LogError("Failed to get affiche image.");
+                        }
+                    };
+                    StartCoroutine(Main.Instance.Web.GetAfficheImage(affichesLocalisation2[i].couverture, getAfficheCouvertureCallback));
+
                     currentCanvaScript.CurrentAffiche = affichesLocalisation2[i];
                     currentCanvaScript.typeObject = 1;
                     currentCanvaScript.typeAffiche = "Affiche";
@@ -113,17 +139,17 @@ public class AffichesScript : MonoBehaviour
     [Obsolete("Obsolete")]
     IEnumerator ChangeMaterialTexture(Material material, string imagePath)
     {
-        Texture2D texture = LoadTextureFromFile(imagePath);
-        if (texture != null)
+        yield return Main.Instance.Web.GetAfficheImage(imagePath, (downloadedSprite) =>
         {
-            material.mainTexture = texture;
-        }
-        else
-        {
-            Debug.LogError("Failed to load texture from path: " + imagePath);
-        }
-
-        yield return null;
+            if (downloadedSprite != null)
+            {
+                material.mainTexture = downloadedSprite.texture;
+            }
+            else
+            {
+                Debug.LogError("Failed to get affiche image.");
+            }
+        });
     }
 
     Texture2D LoadTextureFromFile(string imagePath)

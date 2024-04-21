@@ -217,5 +217,11 @@ namespace ReadyPlayerMe.Samples.QuickStart
                 }
             }
         }
+
+        public void setAvatarUrl(string avUrl)
+        {
+            //todo for sending the url of the current avatar
+            this.avatarUrl = avUrl;
+        }
     }
 }

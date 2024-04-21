@@ -1,5 +1,5 @@
 <?php 
-
+include 'cors.php';
 $servername = "localhost";
 $username = "root";
 $password = "Magali_1984";
