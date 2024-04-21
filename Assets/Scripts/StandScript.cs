@@ -45,7 +45,22 @@ public class StandScript : MonoBehaviour
                     Material material = renderer.materials[0];
                     if (material != null)
                     {
-                        StartCoroutine(ChangeMaterialTexture(material, standsLocalisation1[i].image));
+                        Action<Sprite> getAfficheCouvertureCallback = (downloadedSprite) =>
+                        {
+                            if (downloadedSprite != null)
+                            {
+                                Material newMaterial = new Material(material);
+                                newMaterial.mainTexture = downloadedSprite.texture;
+                                renderer.material = newMaterial;
+                            }
+                            else
+                            {
+                                Debug.LogError("Failed to get affiche image.");
+                            }
+                        };
+                        StartCoroutine(Main.Instance.Web.GetStandImage(standsLocalisation1[i].image, getAfficheCouvertureCallback));
+
+                        // StartCoroutine(ChangeMaterialTexture(material, standsLocalisation1[i].image));
                         currentCanvaScript.CurrentStand = standsLocalisation1[i];
                         currentCanvaScript.typeObject = 2;
                         currentCanvaScript.typeAffiche = "Stand";
@@ -107,7 +122,23 @@ public class StandScript : MonoBehaviour
                     Material material = renderer.materials[0];
                     if (material != null)
                     {
-                        StartCoroutine(ChangeMaterialTexture(material, standsLocalisation2[i].image));
+                        
+                        Action<Sprite> getAfficheCouvertureCallback = (downloadedSprite) =>
+                        {
+                            if (downloadedSprite != null)
+                            {
+                                Material newMaterial = new Material(material);
+                                newMaterial.mainTexture = downloadedSprite.texture;
+                                renderer.material = newMaterial;
+                            }
+                            else
+                            {
+                                Debug.LogError("Failed to get affiche image.");
+                            }
+                        };
+                        StartCoroutine(Main.Instance.Web.GetStandImage(standsLocalisation2[i].image, getAfficheCouvertureCallback));
+
+                        // StartCoroutine(ChangeMaterialTexture(material, standsLocalisation2[i].image));
                         currentCanvaScript.CurrentStand = standsLocalisation2[i];
                         currentCanvaScript.typeObject = 2;
                         currentCanvaScript.typeAffiche = "Stand";

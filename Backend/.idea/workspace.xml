@@ -27,8 +27,11 @@
       <change afterPath="$PROJECT_DIR$/stands/ieee.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/stands/pes.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Scripts/AffichesScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/AffichesScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Assets/Scripts/BackEnd/Login.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Assets/Scripts/BackEnd/Login.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Scripts/BackEnd/PHPConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/BackEnd/PHPConnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Scripts/PlayerInteractions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/PlayerInteractions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Assets/Scripts/ThirdPersonLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/ThirdPersonLoader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvatarTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/cors.php" afterDir="false" />
@@ -46,8 +49,8 @@
       <change beforePath="$PROJECT_DIR$/../Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Library/SplashScreenCache/1c/1c10ce0bdf3b1e9270feb9e0f3465cc0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Library/SplashScreenCache/dc/dc623cf0ed2b090f563ed55c1eaaf50e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logs/AssetImportWorker0-prev.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logs/AssetImportWorker1-prev.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Logs/AssetImportWorker0-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logs/AssetImportWorker1-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Logs/AssetImportWorker1-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/../UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>

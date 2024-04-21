@@ -251,6 +251,38 @@ public class Web : MonoBehaviour
             }
         }
     }
+    [Obsolete("Obsolete")]
+    public IEnumerator GetStandImage(string imageUrl, System.Action<Sprite> callback)
+    {
+        WWWForm form = new WWWForm();
+        using (UnityWebRequest www = UnityWebRequest.Get("http://localhost:1234/GetStandImage.php?image="+imageUrl))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.isNetworkError || www.isHttpError)
+            {
+                Debug.LogError(www.error);
+            }
+            else
+            {
+                byte[] bytes = www.downloadHandler.data;
+            
+                // Créer une Texture2D à partir des bytes
+                Texture2D texture = new Texture2D(2, 2);
+                if (texture.LoadImage(bytes))
+                {
+                    // Créer un Sprite à partir de la Texture2D
+                    Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height),
+                        new Vector2(0.5f, 0.5f));
+                    callback(sprite);
+                }
+                else
+                {
+                    Debug.LogError("Failed to load image bytes into Texture2D.");
+                }
+            }
+        }
+    }
 
     
 }

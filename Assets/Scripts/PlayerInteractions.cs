@@ -188,18 +188,19 @@ public class PlayerInteractions : MonoBehaviour
                         linkOfInteractable.interactable = true;
                         linkOfInteractable.onClick.AddListener(() => OpenLink(currentStand.lien));
                         // Load image from local path
-                        Texture2D texture = LoadTextureFromFile(currentStand.image);
-                        if (texture != null)
+                        Action<Sprite> getStandCouvertureCallback = (downloadedSprite) =>
                         {
-                            // Convert texture to sprite and assign it to the Image component
-                            Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height),
-                                Vector2.zero);
-                            imageOfInteractableText.sprite = sprite;
-                        }
-                        else
-                        {
-                            Debug.LogError("Failed to load image from path: " + currentStand.image);
-                        }
+                            if (downloadedSprite != null)
+                            {
+                                imageOfInteractableText.sprite = downloadedSprite;
+                            }
+                            else
+                            {
+                                Debug.LogError("Failed to get stand image.");
+                            }
+                        };
+                        StartCoroutine(Main.Instance.Web.GetStandImage(currentStand.image, getStandCouvertureCallback));
+                        
                     }
                 }
                 if (currentCanvaScript.typeObject == 3)
